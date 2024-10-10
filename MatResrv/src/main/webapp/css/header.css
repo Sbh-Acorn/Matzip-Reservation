@@ -1,0 +1,80 @@
+header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5); /* 아래쪽에만 그림자 */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+}
+#logo {
+    width: 122px;
+    height: 52px;
+    cursor: pointer;
+}
+#dropdown_wrap {
+    margin-left: 50px;
+    position: relative;
+}
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 40px;
+    padding: 0 10px;
+    cursor: pointer;
+    border: 1px solid lightgrey;
+    background-color: white;
+}
+.item:hover {
+    background-color: aliceblue;
+}
+#selected {
+    width: 80%;
+    text-align: center;
+}
+#down_img {
+    width: 20%;
+    height: 40px;
+}
+#dropdown {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    list-style: none;
+    display: none;
+}
+#dropdown.active {
+    display: block;
+}
+#title {
+    text-align: center;
+    width: 100%;
+}
+#profile_wrap {
+    width: 400px;
+    display: flex;
+    align-items: center;
+}
+#profile_img_wrap {
+    padding: 3px;
+    border: 1px solid lightgrey;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+}
+#profile {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+#profile_info {
+    overflow: hidden;
+}
+#info {
+    font-size: 10px;
+}

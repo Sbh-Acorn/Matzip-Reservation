@@ -1,0 +1,6 @@
+main {
+    height: auto;   /* 테스트해보고 싶으시다면 이 부분의 값을 크게 잡으시면 됩니다 */
+    min-height: 100%;
+    padding-bottom: 250px;
+    background-color: aliceblue;
+}
