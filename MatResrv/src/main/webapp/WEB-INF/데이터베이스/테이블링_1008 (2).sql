@@ -96,6 +96,37 @@ create table st_reservations(
 create sequence reservSeq  start with 1;
 
 insert into st_reservations(  res_no  , res_store  ,  res_name  ,res_date , res_time, number_of_pp, res_success, res_check ) values ( reservSeq.nextval  ,  '광화문미진'  ,'김민수' ,'20241008', '12:00', '4', '1', 'Y' );
+insert into st_reservations(  res_no  , res_store  ,  res_name  ,res_date , res_time, number_of_pp, res_success ) values ( reservSeq.nextval  ,  '파롤앤랑그'  ,'김민지' ,'20241024', '17:00', '2', '1' );
+
+
+
+-- 10월 20일 이전 예약 (res_check 포함)
+insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success, res_check) values (reservSeq.nextval, '광화문미진', '김민수', '20241008', '12:00', '4', '1', 'Y');
+insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success, res_check) values (reservSeq.nextval, '청와옥 본점', '이영희', '20241009', '18:00', '3', '1', 'Y');
+insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success, res_check) values (reservSeq.nextval, '능동미나리', '박지훈', '20241010', '19:30', '2', '1', 'Y');
+insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success, res_check) values (reservSeq.nextval, '해목 롯데월드몰점', '최수진', '20241011', '20:00', '5', '1', 'Y');
+insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success, res_check) values (reservSeq.nextval, '자반고 양주본점', '정우성', '20241012', '13:30', '4', '1', 'Y');
+insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success, res_check) values (reservSeq.nextval, '최미삼순대국', '배수지', '20241013', '11:00', '3', '1', 'N');
+insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success, res_check) values (reservSeq.nextval, '팔선생', '임하나', '20241014', '19:00', '2', '1', 'N');
+insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success, res_check) values (reservSeq.nextval, '포사이', '김민석', '20241015', '17:30', '2', '1', 'Y');
+insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success, res_check) values (reservSeq.nextval, '담택', '김민지', '20241016', '20:00', '3', '1', 'Y');
+insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success, res_check) values (reservSeq.nextval, '다이닝원', '박현수', '20241017', '18:00', '4', '1', 'Y');
+insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success, res_check) values (reservSeq.nextval, '다이닝원', '김민수', '20241018', '19:00', '5', '1', 'Y');
+insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success, res_check) values (reservSeq.nextval, '장인더', '이영희', '20241019', '13:30', '2', '1', 'N');
+
+-- 10월 20일 이후 예약 (res_check 제외)
+insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success) values (reservSeq.nextval, '스시히로미', '박지훈', '20241020', '20:30', '3', '1');
+insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success) values (reservSeq.nextval, '더플라잉팬레드', '최수진', '20241021', '12:00', '4', '1');
+insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success) values (reservSeq.nextval, '북한강돌짜장', '정우성', '20241022', '18:30', '2', '1');
+insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success) values (reservSeq.nextval, '훠궈야', '배수지', '20241023', '17:00', '6', '1');
+insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success) values (reservSeq.nextval, '로마경양식', '임하나', '20241024', '19:00', '3', '1');
+insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success) values (reservSeq.nextval, '송죽장', '김민석', '20241025', '20:00', '4', '1');
+insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success) values (reservSeq.nextval, '올리앤', '김민지', '20241026', '12:30', '2', '1');
+insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success) values (reservSeq.nextval, '광화문미진', '박현수', '20241027', '13:00', '5', '1');
+
+commit;
+
+
 
 select * from  st_reservations  ;
 
@@ -149,4 +180,45 @@ select *
 from stores_08 s
 join owner_08 o
 on s.st_name = o.store_name;
+
+
+--메뉴 카테고리별
+
+select *
+from stores_08
+where menu_category = '한식';
+
+select *
+from stores_08
+where menu_category = '중식';
+
+select *
+from stores_08
+where menu_category = '일식';
+
+select *
+from stores_08
+where menu_category = '양식';
+
+select *
+from stores_08
+where menu_category = '카페/베이커리';
+
+
+
+--평점 높은 순 
+
+select st_name, st_rate, region, menu_category, st_address, st_description
+from stores_08
+order by st_rate desc;
+
+--인기 순
+select sr.res_store, count(sr.res_no) AS reservation_count
+from st_reservations sr
+group by sr.res_store
+order by reservation_count desc;
+
+
+
+
 
