@@ -1,0 +1,41 @@
+footer{
+    height: 270px;
+    position : relative;
+    background-color: whitesmoke;
+    padding: 30px 200px;
+    color: gray;
+    line-height: 1.8;
+    box-sizing: border-box;
+}
+
+#footer_title {
+    font-size: 13px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: rgb(44, 42, 42);
+}
+.footer_txt, #footer_txt {
+    font-size: 12px;
+    font-weight: 400;
+}
+#footer_txt p {
+    line-height: 1.2;
+    font-weight: 400;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+    margin-top: 10px;
+}
+
+.footer_item {
+    color: black;
+    font-weight: 500;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.footer_item:hover {
+    color: blue;
+}
