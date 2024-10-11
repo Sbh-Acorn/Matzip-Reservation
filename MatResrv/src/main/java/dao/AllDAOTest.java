@@ -1,6 +1,7 @@
 package dao;
 
 import java.sql.SQLException;
+import java.util.List;
 import model.Customer;
 import model.Owner;
 import model.Reservation;
@@ -90,6 +91,26 @@ public class AllDAOTest {
             System.out.println("\n=== 점주 예약 내역 조회 테스트 ===");
             for (Reservation res : reservationDAO.getReservationsByStore("testStore")) {
                 System.out.println("예약 번호: " + res.getResNo() + ", 고객 이름: " + res.getResName());
+            }
+
+            // 11. 평점/인기 순으로 가게 조회 테스트
+            System.out.println("\n=== 평점/인기 순으로 가게 조회 테스트 ===");
+            List<Store> stores = storeDAO.getStoresByCombinedScore();
+            for (Store store : stores) {
+                System.out.println("가게 이름: " + store.getStName() + ", 평점: " + store.getStRate());
+            }
+            
+            // 12. 지역 및 카테고리로 가게 조회 테스트
+            System.out.println("\n=== 지역 및 카테고리로 가게 조회 테스트 ===");
+            String region = "서울 북부"; // 예시 지역
+            String category = "한식"; // 예시 카테고리
+            List<Store> filteredStores = storeDAO.getStoresByRegionAndCategory(region, category);
+            if (filteredStores.isEmpty()) {
+                System.out.println("해당 지역 및 카테고리에 해당하는 가게가 없습니다.");
+            } else {
+                for (Store store : filteredStores) {
+                    System.out.println("가게 이름: " + store.getStName() + ", 주소: " + store.getStAddress());
+                }
             }
 
         } catch (SQLException e) {
