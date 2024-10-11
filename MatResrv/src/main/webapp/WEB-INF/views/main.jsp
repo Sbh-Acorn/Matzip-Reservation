@@ -52,7 +52,22 @@
             </div>
         </div>
     </header>
-    <main></main>
+    
+    <main>
+        <!-- 로그인 및 회원가입 버튼 추가 -->
+        <div style="text-align:center; margin-top:20px;">
+            <!-- 로그인 버튼 -->
+            <form action="${pageContext.request.contextPath}/login-select" method="get" style="display:inline;">
+                <input type="submit" value="로그인" style="padding:10px 20px; font-size:16px;">
+            </form>
+
+            <!-- 회원가입 버튼 -->
+            <form action="${pageContext.request.contextPath}/register.jsp" method="get" style="display:inline;">
+                <input type="submit" value="회원가입" style="padding:10px 20px; font-size:16px;">
+            </form>
+        </div>
+    </main>
+    
     <!-- footer부분은 스크롤이 있을때는 css스타일을 그대로 사용하면 됩니다 -->
     <!-- 만약 main부분이 스크롤없이 공간이 남는다면 main.css의 height값을 조정하시면 됩니다-->
     

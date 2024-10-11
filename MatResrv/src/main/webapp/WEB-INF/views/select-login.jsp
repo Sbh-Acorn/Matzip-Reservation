@@ -4,9 +4,19 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>로그인 선택</title>
 </head>
 <body>
+    <h2>로그인 선택</h2>
 
+    <!-- 일반 사용자 로그인 버튼 -->
+    <form action="${pageContext.request.contextPath}/cus-login.jsp" method="get">
+        <input type="submit" value="일반 사용자 로그인">
+    </form>
+
+    <!-- 가게 로그인 버튼 -->
+    <form action="${pageContext.request.contextPath}/store-login.jsp" method="get">
+        <input type="submit" value="가게 로그인">
+    </form>
 </body>
 </html>
