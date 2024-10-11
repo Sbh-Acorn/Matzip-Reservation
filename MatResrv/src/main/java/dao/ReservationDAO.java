@@ -20,7 +20,7 @@ public class ReservationDAO {
             pstmt.setString(2, reservation.getResName());
             pstmt.setString(3, reservation.getResDate());
             pstmt.setString(4, reservation.getResTime());
-            pstmt.setString(5, reservation.getNumberOfPp());
+            pstmt.setString(5, reservation.getNumberOfPp()); 
             pstmt.setString(6, reservation.getResSuccess());
             pstmt.setString(7, reservation.getResCheck());
             pstmt.executeUpdate();
@@ -36,12 +36,12 @@ public class ReservationDAO {
             try (ResultSet rs = pstmt.executeQuery()) {
                 if (rs.next()) {
                     return new Reservation(
-                        rs.getString("res_no"),
+                        rs.getString("res_no"), 
                         rs.getString("res_store"),
                         rs.getString("res_name"),
                         rs.getString("res_date"),
                         rs.getString("res_time"),
-                        rs.getString("number_of_pp"),
+                        rs.getString("number_of_pp"),  
                         rs.getString("res_success"),
                         rs.getString("res_check")
                     );
@@ -60,12 +60,12 @@ public class ReservationDAO {
              ResultSet rs = pstmt.executeQuery()) {
             while (rs.next()) {
                 reservations.add(new Reservation(
-                    rs.getString("res_no"),
+                    rs.getString("res_no"),  
                     rs.getString("res_store"),
                     rs.getString("res_name"),
                     rs.getString("res_date"),
                     rs.getString("res_time"),
-                    rs.getString("number_of_pp"),
+                    rs.getString("number_of_pp"), 
                     rs.getString("res_success"),
                     rs.getString("res_check")
                 ));
@@ -83,7 +83,7 @@ public class ReservationDAO {
             pstmt.setString(2, reservation.getResName());
             pstmt.setString(3, reservation.getResDate());
             pstmt.setString(4, reservation.getResTime());
-            pstmt.setString(5, reservation.getNumberOfPp());
+            pstmt.setString(5, reservation.getNumberOfPp());  
             pstmt.setString(6, reservation.getResSuccess());
             pstmt.setString(7, reservation.getResCheck());
             pstmt.setString(8, reservation.getResNo());
@@ -100,7 +100,55 @@ public class ReservationDAO {
             pstmt.executeUpdate();
         }
     }
+
+    // 고객의 예약 내역 조회
+    public List<Reservation> getReservationsByCustomer(String cusName) throws SQLException {
+        String sql = "SELECT * FROM st_reservations WHERE res_name = ?";
+        List<Reservation> reservations = new ArrayList<>();
+        try (Connection conn = DBUtil.getConnection();
+             PreparedStatement pstmt = conn.prepareStatement(sql)) {
+            pstmt.setString(1, cusName);
+            try (ResultSet rs = pstmt.executeQuery()) {
+                while (rs.next()) {
+                    reservations.add(new Reservation(
+                        rs.getString("res_no"),
+                        rs.getString("res_store"),
+                        rs.getString("res_name"),
+                        rs.getString("res_date"),
+                        rs.getString("res_time"),
+                        rs.getString("number_of_pp"),
+                        rs.getString("res_success"),
+                        rs.getString("res_check")
+                    ));
+                }
+            }
+        }
+        return reservations;
+    }
+
+    // 점주의 가게 예약 내역 조회
+    public List<Reservation> getReservationsByStore(String storeName) throws SQLException {
+        String sql = "SELECT * FROM st_reservations WHERE res_store = ?";
+        List<Reservation> reservations = new ArrayList<>();
+        try (Connection conn = DBUtil.getConnection();
+             PreparedStatement pstmt = conn.prepareStatement(sql)) {
+            pstmt.setString(1, storeName);
+            try (ResultSet rs = pstmt.executeQuery()) {
+                while (rs.next()) {
+                    reservations.add(new Reservation(
+                        rs.getString("res_no"),
+                        rs.getString("res_store"),
+                        rs.getString("res_name"),
+                        rs.getString("res_date"),
+                        rs.getString("res_time"),
+                        rs.getString("number_of_pp"),
+                        rs.getString("res_success"),
+                        rs.getString("res_check")
+                    ));
+                }
+            }
+        }
+        return reservations;
+    }
 }
-
-
 
