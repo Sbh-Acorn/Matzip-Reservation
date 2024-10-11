@@ -2,6 +2,8 @@
 
 --가게 테이블
 drop table stores_08;
+
+
 create table stores_08(
      region varchar2(20) not null,
      st_name varchar2(30) not null primary key,
@@ -12,7 +14,104 @@ create table stores_08(
 );      
 
 
+--사진속성 추가
+
+alter table  stores_08   add  imgurl   varchar2(300) ;
+--사진 url 추가
+update stores_08
+set imgurl = 'https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240723_19%2F1721737944632b2tCb_JPEG%2FKakaoTalk_20240723_171426051_01.jpg'
+where st_name = '광화문미진';
+update stores_08
+set imgurl = 'https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20221219_147%2F1671413977277kfr7A_JPEG%2FIMG_6672.jpg'
+where st_name = '능동미나리';
+update stores_08
+set imgurl = 'https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240621_87%2F1718932410349D9ACn_JPEG%2FF482F18E-8E01-4C71-846F-DCD0CD730DCA.jpeg'
+where st_name = '담택';
+update stores_08
+set imgurl = 'https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20210203_238%2F16123396686766BgmO_JPEG%2FVQEX-Jzh8ySeojDcZ51EIAcv.jpeg.jpg'
+where st_name = '파롤앤랑그';
+update stores_08
+set imgurl = 'https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20231012_86%2F1697077507089lRnWF_JPEG%2F__001715%2528%25C0%25FA%2529.jpg'
+where st_name = '파이브가이즈 여의도';
+update stores_08
+set imgurl = 'https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20230222_203%2F1677028275219acwLW_JPEG%2F3.jpg'
+where st_name = '청와옥 본점';
+update stores_08
+set imgurl = 'https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20231206_140%2F17018453615409K0xF_JPEG%2FIMG_0377.jpeg'
+where st_name = '해목 롯데월드몰점';
+update stores_08
+set imgurl = 'https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20181006_136%2F15388263467956xmnr_JPEG%2FDunqlR9MCDsclX5iIq9zHSqS.jpg'
+where st_name = '까폼';
+update stores_08
+set imgurl = 'https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20230507_28%2F1683449775436GV1fG_JPEG%2F%25C8%25AD%25B4%25F6%25BB%25E7%25C1%25F8_%25B3%25D7%25C0%25CC%25B9%25F6%25BF%25EB.jpg'
+where st_name = '자반고 양주본점';
+update stores_08
+set imgurl = 'https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20230819_5%2F1692450961444anluN_JPEG%2F20180622_024232.jpg'
+where st_name = '스시히로미';
+update stores_08
+set imgurl = 'https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240115_87%2F1705294154194iaS1U_JPEG%2F%25B8%25C5%25C0%25E5%25B7%25CE%25B0%25ED__%25C7%25C3%25B7%25B9%25C0%25CC%25BD%25BA%25BF%25EB.JPG'
+where st_name = '파크프리베';
+update stores_08
+set imgurl = 'https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240114_55%2F17052394107669kRJ4_JPEG%2F%25BC%25BC%25C6%25AE_%25B5%25B9%25C2%25A5%25C0%25E5_%25D3%25DE_%252B_%25B0%25A5%25BA%25F1%25C2%25F2_%25D3%25DE.jpg'
+where st_name = '북한강돌짜장';
+update stores_08
+set imgurl = 'https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20221208_56%2F16704979113278pbyu_JPEG%2F1670497869109.jpg'
+where st_name = '최미삼순대국';
+update stores_08
+set imgurl = 'https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20210323_157%2F16164961014288UEDS_JPEG%2FQcxSSU7tB8Cvyrcn6YwE-Fxg.jpeg.jpg'
+where st_name = '로마경양식';
+update stores_08
+set imgurl = 'https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20150901_137%2F1441050016442aTggi_JPEG%2F97167548137710_0.jpg'
+where st_name = '포사이';
+update stores_08
+set imgurl = 'https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240501_274%2F17144973577001RoQu_JPEG%2FKakaoTalk_20240501_013626274.jpg'
+where st_name = '훠궈야';
+update stores_08
+set imgurl = 'https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20220614_25%2F1655176207066HO0qW_JPEG%2F7FFD4D7F-67A5-4410-B66D-CEF6EF4C243D.jpeg'
+where st_name = '더플라잉팬레드';
+update stores_08
+set imgurl = 'https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240106_149%2F17045077684778w4Mh_JPEG%2F1000031260.jpg'
+where st_name = '장인더';
+update stores_08
+set imgurl = 'https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyNDA4MDVfMjIy%2FMDAxNzIyODY1NzIwNjYx.6lctFPAvOs5xoafy-hdelvmGVRURf4FJaB26GG5WOekg.X1UwEjj7GcQAR64FeL6HJDl3Pu_9MUO4BU_fHvtRABIg.JPEG%2F53B17E72-1056-45F3-85A6-8B9C8412502B.jpeg%3Ftype%3Dw1500_60_sharpen'
+where st_name = '두세르';
+update stores_08
+set imgurl = 'https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240411_248%2F1712796636352uOFHU_JPEG%2F%25C1%25A6%25B8%25F1%25C0%25BB-%25C0%25D4%25B7%25C2%25C7%25D8%25C1%25D6%25BC%25BC%25BF%25E4_-001_%25281%2529.jpg'
+where st_name = '다이닝원';
+update stores_08
+set imgurl = 'https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20220318_112%2F1647591501689rhuOO_JPEG%2F%25B8%25E0%25BA%25B8%25BB%25FE.jpg'
+where st_name = '진진';
+update stores_08
+set imgurl = 'https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20150831_97%2F14409973295930rNod_JPEG%2F126873545332510_0.jpg'
+where st_name = '팔선생';
+update stores_08
+set imgurl = 'https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20220316_64%2F1647408253427gtxhF_JPEG%2F5.JPG'
+where st_name = '매란방';
+update stores_08
+set imgurl = 'https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20220501_117%2F1651401168150pMT0r_JPEG%2F1651401156132.jpg'
+where st_name = '송죽장';
+update stores_08
+set imgurl = 'https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20180731_50%2F1533028164041ai5oI_PNG%2FWOsWjcaDkoo1PD4E-28ys-3Q.PNG.png'
+where st_name = '올리앤';
+update stores_08
+set imgurl = 'https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20211228_268%2F1640660798753lU7in_JPEG%2F%25B7%25CE%25B0%25ED.jpeg'
+where st_name = '원 디그리 노스';
+update stores_08
+set imgurl = 'https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20230723_76%2F1690120878597nXXzd_JPEG%2F2023_%25C6%25C4%25C6%25C4%25BE%25DF%25B8%25AE%25C7%25C1_bi_rev.jpg'
+where st_name = '파파야리프';
+update stores_08
+set imgurl = 'https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20231226_59%2F1703568415282aCklo_PNG%2Fdddd.png'
+where st_name = '에이시안';
+update stores_08
+set imgurl = 'https://search.pstatic.net/common/?src=https%3A%2F%2Fnaverbooking-phinf.pstatic.net%2F20240904_115%2F1725415804173SJ3Vn_JPEG%2F1_%25282%2529.jpg'
+where st_name = '클랩피자';
+update stores_08
+set imgurl = 'https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240409_40%2F1712660157767b9eUB_JPEG%2F1000014267.jpg'
+where st_name = '오라';
 select * from stores_08;
+
+
+
 
 insert into stores_08 values('서울 북부', '광화문미진', '한식', '서울 종로구 종로 19 1층', '4.6', '1954년 개업 전통있는 메밀국수집');
 insert into stores_08 values('서울 북부', '능동미나리', '한식', '서울 용산구 한강대로40길 28 1, 2층', '4.7', '곰탕을 정말 맛있게 먹을 수 있는 집! 신용산역 곰탕맛집 능동미나리');
@@ -96,6 +195,37 @@ create table st_reservations(
 create sequence reservSeq  start with 1;
 
 insert into st_reservations(  res_no  , res_store  ,  res_name  ,res_date , res_time, number_of_pp, res_success, res_check ) values ( reservSeq.nextval  ,  '광화문미진'  ,'김민수' ,'20241008', '12:00', '4', '1', 'Y' );
+insert into st_reservations(  res_no  , res_store  ,  res_name  ,res_date , res_time, number_of_pp, res_success ) values ( reservSeq.nextval  ,  '파롤앤랑그'  ,'김민지' ,'20241024', '17:00', '2', '1' );
+
+
+
+-- 10월 20일 이전 예약 (res_check 포함)
+insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success, res_check) values (reservSeq.nextval, '광화문미진', '김민수', '20241008', '12:00', '4', '1', 'Y');
+insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success, res_check) values (reservSeq.nextval, '청와옥 본점', '이영희', '20241009', '18:00', '3', '1', 'Y');
+insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success, res_check) values (reservSeq.nextval, '능동미나리', '박지훈', '20241010', '19:30', '2', '1', 'Y');
+insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success, res_check) values (reservSeq.nextval, '해목 롯데월드몰점', '최수진', '20241011', '20:00', '5', '1', 'Y');
+insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success, res_check) values (reservSeq.nextval, '자반고 양주본점', '정우성', '20241012', '13:30', '4', '1', 'Y');
+insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success, res_check) values (reservSeq.nextval, '최미삼순대국', '배수지', '20241013', '11:00', '3', '1', 'N');
+insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success, res_check) values (reservSeq.nextval, '팔선생', '임하나', '20241014', '19:00', '2', '1', 'N');
+insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success, res_check) values (reservSeq.nextval, '포사이', '김민석', '20241015', '17:30', '2', '1', 'Y');
+insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success, res_check) values (reservSeq.nextval, '담택', '김민지', '20241016', '20:00', '3', '1', 'Y');
+insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success, res_check) values (reservSeq.nextval, '다이닝원', '박현수', '20241017', '18:00', '4', '1', 'Y');
+insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success, res_check) values (reservSeq.nextval, '다이닝원', '김민수', '20241018', '19:00', '5', '1', 'Y');
+insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success, res_check) values (reservSeq.nextval, '장인더', '이영희', '20241019', '13:30', '2', '1', 'N');
+
+-- 10월 20일 이후 예약 (res_check 제외)
+insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success) values (reservSeq.nextval, '스시히로미', '박지훈', '20241020', '20:30', '3', '1');
+insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success) values (reservSeq.nextval, '더플라잉팬레드', '최수진', '20241021', '12:00', '4', '1');
+insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success) values (reservSeq.nextval, '북한강돌짜장', '정우성', '20241022', '18:30', '2', '1');
+insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success) values (reservSeq.nextval, '훠궈야', '배수지', '20241023', '17:00', '6', '1');
+insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success) values (reservSeq.nextval, '로마경양식', '임하나', '20241024', '19:00', '3', '1');
+insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success) values (reservSeq.nextval, '송죽장', '김민석', '20241025', '20:00', '4', '1');
+insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success) values (reservSeq.nextval, '올리앤', '김민지', '20241026', '12:30', '2', '1');
+insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success) values (reservSeq.nextval, '광화문미진', '박현수', '20241027', '13:00', '5', '1');
+
+commit;
+
+
 
 select * from  st_reservations  ;
 
@@ -149,4 +279,45 @@ select *
 from stores_08 s
 join owner_08 o
 on s.st_name = o.store_name;
+
+
+--메뉴 카테고리별
+
+select *
+from stores_08
+where menu_category = '한식';
+
+select *
+from stores_08
+where menu_category = '중식';
+
+select *
+from stores_08
+where menu_category = '일식';
+
+select *
+from stores_08
+where menu_category = '양식';
+
+select *
+from stores_08
+where menu_category = '카페/베이커리';
+
+
+
+--평점 높은 순 
+
+select st_name, st_rate, region, menu_category, st_address, st_description
+from stores_08
+order by st_rate desc;
+
+--인기 순
+select sr.res_store, count(sr.res_no) AS reservation_count
+from st_reservations sr
+group by sr.res_store
+order by reservation_count desc;
+
+
+
+
 
