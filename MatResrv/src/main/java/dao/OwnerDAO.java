@@ -11,7 +11,7 @@ import util.DBUtil;
 
 public class OwnerDAO {
 
-    // 점주 정보 삽입 (Create)
+    // 점주 정보 삽입 (Create) - 관리자가 직접 점주 데이터를 입력
     public void addOwner(Owner owner) throws SQLException {
         String sql = "INSERT INTO owner_08 (store_name, owner_pw, owner_phone) VALUES (?, ?, ?)";
         try (Connection conn = DBUtil.getConnection();
@@ -81,6 +81,24 @@ public class OwnerDAO {
             pstmt.executeUpdate();
         }
     }
+
+    // 로그인 기능 추가 (가게 이름과 비밀번호 확인)
+    public Owner login(String storeName, String ownerPw) throws SQLException {
+        String sql = "SELECT * FROM owner_08 WHERE store_name = ? AND owner_pw = ?";
+        try (Connection conn = DBUtil.getConnection();
+             PreparedStatement pstmt = conn.prepareStatement(sql)) {
+            pstmt.setString(1, storeName);
+            pstmt.setString(2, ownerPw);
+            try (ResultSet rs = pstmt.executeQuery()) {
+                if (rs.next()) {
+                    return new Owner(
+                        rs.getString("store_name"),
+                        rs.getString("owner_pw"),
+                        rs.getString("owner_phone")
+                    );
+                }
+            }
+        }
+        return null;
+    }
 }
-
-

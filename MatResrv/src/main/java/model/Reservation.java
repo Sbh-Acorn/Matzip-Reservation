@@ -14,9 +14,20 @@ public class Reservation {
     public Reservation() {
     }
 
-    // 매개변수를 받는 생성자
+    // 8개의 매개변수를 받는 생성자
     public Reservation(String resNo, String resStore, String resName, String resDate, String resTime, String numberOfPp, String resSuccess, String resCheck) {
         this.resNo = resNo;
+        this.resStore = resStore;
+        this.resName = resName;
+        this.resDate = resDate;
+        this.resTime = resTime;
+        this.numberOfPp = numberOfPp;
+        this.resSuccess = resSuccess;
+        this.resCheck = resCheck;
+    }
+
+    // 7개의 매개변수를 받는 생성자 (resNo 없이)
+    public Reservation(String resStore, String resName, String resDate, String resTime, String numberOfPp, String resSuccess, String resCheck) {
         this.resStore = resStore;
         this.resName = resName;
         this.resDate = resDate;
