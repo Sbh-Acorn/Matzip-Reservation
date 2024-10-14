@@ -1,5 +1,8 @@
+<%@page import="model.Customer"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ page session="true" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,6 +13,7 @@
     <link rel="stylesheet" href="/MatResrv/css/main.css">
     <link rel="stylesheet" href="/MatResrv/css/footer.css">
     <script defer src="/MatResrv/js/header.js"></script>
+    <script defer src="/MatResrv/js/main.js"></script>
 </head>
 <body>
     <!-- flex 처리 -->
@@ -43,28 +47,131 @@
         <!-- 프로필 부분 -->
         <div id="profile_wrap">
             <div id="profile_img_wrap">
-                <img src="/MatResrv/img/profile.svg" alt="" id="profile">
+                <%
+                Customer loggedInCustomer = (Customer) session.getAttribute("loggedInCustomer");
+                String profileImage;
+                if (loggedInCustomer != null) {
+                    profileImage = "/MatResrv/img/people2.svg"; // 로그인된 경우
+                } else {
+                    profileImage = "/MatResrv/img/profile.svg"; // 비로그인 상태일 때 기본 이미지
+                }
+            	%>
+            <img src="<%= profileImage %>" alt="" id="profile"
+                <% if (loggedInCustomer == null) { %>
+                    onclick="window.location.href='<%= request.getContextPath() %>/login-select'"
+                <% } %>
+            >
+<!--        <img src="/MatResrv/img/profile.svg" alt="" id="profile"> -->
             </div>
             <!-- 프로필 닉네임과 간단한 한마디? -->
-            <div id="profile_info">
+            <div id="profile_info" <% if (loggedInCustomer == null) { %> style="display:none" <% } %>>
+            <p id="nickname">
+                <%
+                    if (loggedInCustomer != null) {
+                        out.print(loggedInCustomer.getCusName());
+                    }
+                %>
+            </p>
+            <p id="info">오늘도 잘 부탁드립니다</p>
+        	</div>
+<!--             <div id="profile_info">
                 <p id="nickname">test123</p>
                 <p id="info">오늘도 잘 부탁드립니다</p>
-            </div>
+            </div> -->
         </div>
     </header>
     
     <main>
-        <!-- 로그인 및 회원가입 버튼 추가 -->
-        <div style="text-align:center; margin-top:20px;">
-            <!-- 로그인 버튼 -->
-            <form action="${pageContext.request.contextPath}/login-select" method="get" style="display:inline;">
-                <input type="submit" value="로그인" style="padding:10px 20px; font-size:16px;">
-            </form>
-
-            <!-- 회원가입 버튼 -->
-            <form action="${pageContext.request.contextPath}/register.jsp" method="get" style="display:inline;">
-                <input type="submit" value="회원가입" style="padding:10px 20px; font-size:16px;">
-            </form>
+        <!-- 배너를 테스트 할때는 창을 하나만 켜두고 하는것을 권장합니다 -->
+        <!-- 여러개의 창을 띄워놓고 테스트 할 경우 타이머 관련 문제가 발생하여 높은 확률로 비정상적인 작동이 발생합니다. -->
+        <div id="banner_wrap">
+            <div id="left_wrap"><img src="/MatResrv/img/left.svg" alt="" id="left"></div>
+            <div id="right_wrap"><img src="/MatResrv/img/right.svg" alt="" id="right"></div>
+            <div id="banner">
+                <ul id="banner_list">
+                    <!-- banner img들 -->
+                    <li class="banner_item"><img src="/MatResrv/img/testImg.png" alt="" class="banner_img"></li>
+                    <li class="banner_item"><img src="/MatResrv/img/testImg.png" alt="" class="banner_img"></li>
+                    <li class="banner_item"><img src="/MatResrv/img/testImg.png" alt="" class="banner_img"></li>
+                    <li class="banner_item"><img src="/MatResrv/img/testImg.png" alt="" class="banner_img"></li>
+                    <li class="banner_item"><img src="/MatResrv/img/testImg.png" alt="" class="banner_img"></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <h1 id="select_title">원하는 음식을 편하게 찾아보세요</h1>
+        <div id="select_wrap">
+            <ul id="select">
+                <li class="select_item"><div class="select_img_wrap"><img src="/MatResrv/img/korean.png" alt="" class="select_img"></div><p class="select_txt">한식</p></li>
+                <li class="select_item"><div class="select_img_wrap"><img src="/MatResrv/img/chinese.png" alt="" class="select_img"></div><p class="select_txt">중식</p></li>
+                <li class="select_item"><div class="select_img_wrap"><img src="/MatResrv/img/japanese.png" alt="" class="select_img"></div><p class="select_txt">일식</p></li>
+                <li class="select_item"><div class="select_img_wrap"><img src="/MatResrv/img/western.png" alt="" class="select_img"></div><p class="select_txt">양식</p></li>
+                <li class="select_item"><div class="select_img_wrap"><img src="/MatResrv/img/asian.png" alt="" class="select_img"></div><p class="select_txt">아시아</p></li>
+                <li class="select_item"><div class="select_img_wrap"><img src="/MatResrv/img/cafe.png" alt="" class="select_img"></div><p class="select_txt">카페</p></li>
+            </ul>
+        </div>
+        <hr>
+        <h1 id="rec_title">오늘의 추천</h1>
+        <h3 id="rec_subtitle">(페이지명)이 추천하는 오늘의 메뉴를 만나보세요</h3>
+        <div id="rec_wrap">
+            <ul id="rec">
+                <!-- 테스트용, 나중에는 전부 지울 생각입니다. -->
+                <li class="rec_item">
+                    <div>
+                        <div class="item_img_wrap"><img src="/MatResrv/img/testImg2.png" alt="" class="item_img"></div>
+                        <p class="item_txt">고도식 마포점</p>
+                        <div class="add_wrap">
+                            <img src="/MatResrv/img/star.png" alt="" class="star">
+                            <p class="score">4.2</p>
+                            <p class="add">육류, 고기요리, 마포</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="rec_item">
+                    <div>
+                        <div class="item_img_wrap"><img src="/MatResrv/img/testImg2.png" alt="" class="item_img"></div>
+                        <p class="item_txt">고도식 마포점</p>
+                        <div class="add_wrap">
+                            <img src="../img/star.png" alt="" class="star">
+                            <p class="score">4.2</p>
+                            <p class="add">육류, 고기요리, 마포</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="rec_item">
+                    <div>
+                        <div class="item_img_wrap"><img src="/MatResrv/img/testImg2.png" alt="" class="item_img"></div>
+                        <p class="item_txt">고도식 마포점</p>
+                        <div class="add_wrap">
+                            <img src="../img/star.png" alt="" class="star">
+                            <p class="score">4.2</p>
+                            <p class="add">육류, 고기요리, 마포</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="rec_item">
+                    <div>
+                        <div class="item_img_wrap"><img src="/MatResrv/img/testImg2.png" alt="" class="item_img"></div>
+                        <p class="item_txt">고도식 마포점</p>
+                        <div class="add_wrap">
+                            <img src="../img/star.png" alt="" class="star">
+                            <p class="score">4.2</p>
+                            <p class="add">육류, 고기요리, 마포</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="rec_item">
+                    <div>
+                        <div class="item_img_wrap"><img src="/MatResrv/img/testImg2.png" alt="" class="item_img"></div>
+                        <p class="item_txt">고도식 마포점</p>
+                        <div class="add_wrap">
+                            <img src="../img/star.png" alt="" class="star">
+                            <p class="score">4.2</p>
+                            <p class="add">육류, 고기요리, 마포</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </div>
     </main>
     

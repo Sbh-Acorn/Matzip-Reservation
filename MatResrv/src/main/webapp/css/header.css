@@ -59,6 +59,7 @@ header {
     width: 400px;
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 #profile_img_wrap {
     padding: 3px;
@@ -70,7 +71,6 @@ header {
 #profile {
     width: 30px;
     height: 30px;
-    cursor: pointer;
 }
 #profile_info {
     overflow: hidden;
