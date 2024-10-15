@@ -18,7 +18,7 @@ public class CustomerLoginServlet extends HttpServlet {
     // GET 요청으로 로그인 페이지로 이동
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.getRequestDispatcher("/WEB-INF/views/customer-login.jsp").forward(req, resp);
+        req.getRequestDispatcher("/WEB-INF/views/cus-login.jsp").forward(req, resp);
     }
 
     // POST 요청으로 로그인 처리
@@ -36,7 +36,7 @@ public class CustomerLoginServlet extends HttpServlet {
             if (customer == null) {
                 // 사용자가 존재하지 않을 경우
                 req.setAttribute("errorMessage", "등록되지 않은 아이디입니다.");
-                req.getRequestDispatcher("/WEB-INF/views/customer-login.jsp").forward(req, resp);
+                req.getRequestDispatcher("/WEB-INF/views/cus-login.jsp").forward(req, resp);
             } else {
                 // 사용자가 존재할 경우 비밀번호를 확인
                 if (customer.getCusPw().equals(cusPw)) {
@@ -49,7 +49,7 @@ public class CustomerLoginServlet extends HttpServlet {
                 } else {
                     // 비밀번호가 일치하지 않을 경우
                     req.setAttribute("errorMessage", "비밀번호가 틀렸습니다.");
-                    req.getRequestDispatcher("/WEB-INF/views/customer-login.jsp").forward(req, resp);
+                    req.getRequestDispatcher("/WEB-INF/views/cus-login.jsp").forward(req, resp);
                 }
             }
         } catch (SQLException e) {
