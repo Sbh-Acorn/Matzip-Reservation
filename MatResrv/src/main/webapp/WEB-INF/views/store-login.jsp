@@ -28,7 +28,7 @@
     </div>
     <main>
         <div id="content_wrap">
-            <h2 id="title">페이지 로그인</h2>
+            <h2 id="title">점주 로그인</h2>
             <form action="${pageContext.request.contextPath}/store-login" method="post">
                 <div id="id_wrap">
                     <label for="id">

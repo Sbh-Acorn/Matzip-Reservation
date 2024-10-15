@@ -19,27 +19,27 @@
         <!-- 드롭다운 메뉴 -->
         <div id="dropdown_wrap">
             <div id="selected_box" class="item">
-                <p id="selected">강동구</p>
+                <p id="selected">서울 북부</p>
                 <img src="/MatResrv/img/down.svg" alt="" id="down_img">
             </div>
             <!-- display : none 처리된 dropdown 리스트 -->
             <ul id="dropdown">
                 <li class="list">
-                    <div class="item items">강동구</div>
+                    <div class="item items">서울 북부</div>
                 </li>
                 <li class="list">
-                    <div class="item items">강서구</div>
+                    <div class="item items">서울 남부</div>
                 </li>
                 <li class="list">
-                    <div class="item items">강남구</div>
+                    <div class="item items">경기 북부</div>
                 </li>
                 <li class="list">
-                    <div class="item items">강북구</div>
+                    <div class="item items">경기 남부</div>
                 </li>
             </ul>
         </div>
         <!-- 페이지명 설정부분 -->
-        <h1 id="title">페이지명</h1>
+        <h1 id="title">로그인 선택 화면</h1>
         <!-- 프로필 부분 -->
         <div id="profile_wrap">
             <div id="profile_img_wrap">

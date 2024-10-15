@@ -57,7 +57,7 @@
     </div>
 
     <!-- 페이지명 설정부분 -->
-    <h1 id="title">페이지명</h1>
+    <h1 id="title">Matzip Travel</h1>
     <!-- 프로필 부분 -->
     
     <div id="profile_wrap">
