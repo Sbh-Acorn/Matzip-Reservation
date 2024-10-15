@@ -29,20 +29,20 @@
     <main>
         <div id="content_wrap">
             <h2 id="title">페이지 로그인</h2>
-            <form action="${pageContext.request.contextPath}/cus-login" method="post">
+            <form action="${pageContext.request.contextPath}/store-login" method="post">
                 <div id="id_wrap">
                     <label for="id">
                         가게이름/지역
                     </label>
                     <br>
-                    <input type="text" id="id" name="input_id" placeholder="아이디를 입력해주세요" required>
+                    <input type="text" id="id" name="StoreId" placeholder="아이디를 입력해주세요" required>
                 </div>
                 <div id="pw_wrap">
                     <label for="pw">
                         비밀번호
                     </label>
                     <br>
-                    <input type="text" id="pw" name="input_pw" placeholder="비밀번호를 입력해주세요" required>
+                    <input type="text" id="pw" name="ownerPw" placeholder="비밀번호를 입력해주세요" required>
                 </div>
                 <button id="login">로그인</button>
             </form>

@@ -33,27 +33,27 @@
                 <div id="name_wrap">
                     <label for="name">이름</label>
                     <br>
-                    <input type="text" id="name" name="cudName" maxlength="10" required>
+                    <input type="text" id="name" name="cusName" maxlength="10" required>
                 </div>
                 <div id="phone_wrap">
                     <label for="phone">전화번호</label>
                     <br>
-                    <input type="text" id="phone" name="cusPhone" maxlength="10" required>
+                    <input type="text" id="phone" name="cusPhone" maxlength="11" required>
                 </div>
                 <div id="id_wrap">
                     <label for="name">아이디</label>
                     <br>
-                    <input type="text" id="id" name="cusId" maxlength="10" required>
+                    <input type="text" id="id" name="cusId" maxlength="20" required>
                 </div>
                 <div id="pw_wrap">
                     <label for="pw">비밀번호</label>
                     <br>
-                    <input type="text" id="pw" name="cusPw" maxlength="10" required>
+                    <input type="text" id="pw" name="cusPw" maxlength="20" required>
                 </div>
                 <div id="check_wrap">
                     <label for="check">비밀번호 확인</label>
                     <br>
-                    <input type="text" id="check" name="cusCheck" maxlength="10" required>
+                    <input type="text" id="check" name="cusCheck" maxlength="20" required>
                 </div>
                 <button id="register">회원가입</button>
             </form>

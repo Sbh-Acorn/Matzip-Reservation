@@ -7,22 +7,24 @@ public class Store {
     private String stAddress;
     private String stRate;
     private String stDescription;
+    private String imgUrl;  // 이미지 URL 필드 추가
 
     // 기본 생성자
     public Store() {
     }
 
-    // 매개변수를 받는 생성자
-    public Store(String region, String stName, String menuCategory, String stAddress, String stRate, String stDescription) {
+    // 매개변수를 받는 생성자 (imgUrl 추가)
+    public Store(String region, String stName, String menuCategory, String stAddress, String stRate, String stDescription, String imgUrl) {
         this.region = region;
         this.stName = stName;
         this.menuCategory = menuCategory;
         this.stAddress = stAddress;
         this.stRate = stRate;
         this.stDescription = stDescription;
+        this.imgUrl = imgUrl; // 추가
     }
 
-    // Getter 및 Setter
+    // Getter 및 Setter 추가
     public String getRegion() {
         return region;
     }
@@ -70,5 +72,12 @@ public class Store {
     public void setStDescription(String stDescription) {
         this.stDescription = stDescription;
     }
-}
 
+    public String getImgUrl() { // imgurl 필드 추가
+        return imgUrl;
+    }
+
+    public void setImgUrl(String imgUrl) {
+        this.imgUrl = imgUrl;
+    }
+}

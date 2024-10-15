@@ -11,7 +11,10 @@ import javax.servlet.http.HttpServletResponse;
 public class LoginSelectServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        // login-select.jsp로 포워딩
-        req.getRequestDispatcher("/WEB-INF/views/select-login.jsp").forward(req, resp);
+        
+    	// login-select.jsp로 포워딩
+    	req.setCharacterEncoding("UTF-8");
+        resp.setContentType("text/html; charset=UTF-8");
+    	req.getRequestDispatcher("/WEB-INF/views/select-login.jsp").forward(req, resp);
     }
 }

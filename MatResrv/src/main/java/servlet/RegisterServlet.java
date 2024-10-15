@@ -17,13 +17,17 @@ public class RegisterServlet extends HttpServlet {
     // 회원가입 페이지로 이동 (GET 요청 처리)
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.getRequestDispatcher("/WEB-INF/views/register.jsp").forward(req, resp);
+    	req.setCharacterEncoding("UTF-8");
+    	resp.setContentType("text/html; charset=UTF-8");
+    	req.getRequestDispatcher("/WEB-INF/views/register.jsp").forward(req, resp);
     }
 
     // 회원가입 처리 (POST 요청 처리)
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         // 사용자가 입력한 데이터를 받아옴
+    	req.setCharacterEncoding("UTF-8");
+        resp.setContentType("text/html; charset=UTF-8");
         String cusId = req.getParameter("cusId");
         String cusPw = req.getParameter("cusPw");
         String cusName = req.getParameter("cusName");
@@ -46,7 +50,7 @@ public class RegisterServlet extends HttpServlet {
                 // 새로운 ID일 경우 회원가입 처리
                 customerDAO.addCustomer(customer);
                 // 회원가입 성공 시 로그인 페이지로 리다이렉트
-                resp.sendRedirect(req.getContextPath() + "/cus-login.jsp");
+                resp.sendRedirect(req.getContextPath() + "/cus-login");
             }
         } catch (SQLException e) {
             e.printStackTrace();

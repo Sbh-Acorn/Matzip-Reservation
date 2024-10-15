@@ -1,0 +1,217 @@
+main {
+    display: flex;
+    height: auto;   /* 테스트해보고 싶으시다면 이 부분의 값을 크게 잡으시면 됩니다 */
+    min-height: 100%;
+    padding: 100px 200px 280px 200px;
+    background-color: rgb(240, 248, 255, 0.5);
+    color: darkslategrey;
+}
+
+#ul_wrap {
+    margin-top: 20px;
+    width: 20%;
+    padding: 20px;
+}
+
+#my_title {
+    margin-bottom: 10px;
+}
+
+#my_info {
+    width: 20%;
+}
+
+ul {
+    list-style: none;
+}
+
+.select_list {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.select_item {
+    width: 150px;
+    border: 1px solid lightgrey;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    position: relative;
+    cursor: pointer;
+    background-color: white;
+}
+
+.select_item:hover {
+    background-color: whitesmoke;
+}
+
+.select_item.active {
+
+}
+
+.right {
+    position: absolute;
+    right: 8px;
+    width: 18px;
+    height: 18px;
+}
+
+#my_info, #my_check, my_history {
+    padding: 20px;
+    width: 60%;
+    background-color: rgb(250, 235, 215, 0.2);
+}
+
+.hr1 {
+    height: 2px;
+    background-color: black;
+    margin: 5px 0 20px 0;
+}
+
+#wrap_wrap {
+    width: 100%;
+    padding: 20px 40px 0 100px;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+#id_wrap, #name_wrap, #phone_wrap {
+    display: flex;
+    align-items: center;
+    height: 80px;
+}
+
+.tag {
+    font-size: 18px;
+    width: 100px;
+}
+
+.info_input {
+    width: 400px;
+    border: 1px solid saddlebrown;
+    padding: 10px;
+    color: brown
+}
+
+#btn_wrap {
+    margin-top: 15px;
+    display: flex;
+    justify-content: right;
+}
+
+#btn1, #btn2 {
+    background-color: white;
+    border: 1px solid lightgrey;
+    cursor: pointer;
+    padding: 8px 25px;
+}
+
+#btn1 {
+    margin-right: 10px;
+}
+
+#btn1:hover, #btn2:hover {
+    background-color: whitesmoke;
+}
+
+
+.content_wrap {
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    height: 200px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.content_img_wrap {
+    width: 150px;
+    height: 150px;
+    border: 1px solid saddlebrown;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-right: 30px;
+}
+
+.back_img {
+    width: 150px;
+    height: 150px;
+}
+
+.content {
+    width: 60%;
+}
+
+.content_title {
+    font-size: 22px;
+    margin-bottom: 5px;
+    color: rgb(0, 0, 0, 0.8);
+}
+
+.hr3 {
+    margin: 10px 0;
+}
+
+.content_location {
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(0, 0, 0, 0.8);
+    margin: 20px 0 20px 0;
+}
+
+.content_day {
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(0, 0, 0, 0.8);
+}
+
+.content_btn_wrap {
+    display: flex;
+    justify-content: right;
+}
+
+.cancel {
+    background-color: white;
+    border: 1px solid lightgrey;
+    cursor: pointer;
+    padding: 12px 40px;
+    margin: 0 20px 20px 0;
+}
+
+.cancel:hover {
+    background-color: whitesmoke;
+}
+
+.content_wrap_wrap {
+    border: 2px solid lightgrey;
+    background-color: rgba(228, 242, 255, 0.4);
+    border-radius: 10px;
+}
+
+
+
+
+#my_history {
+    width: 60%;
+}
+
+.history_list {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.history_wrap {
+    width: 90%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background-color: lightgrey;
+}
+
+.history_title {
+    font-size: 14px;
+}

@@ -10,7 +10,16 @@ import model.Reservation;
 import util.DBUtil;
 
 public class ReservationDAO {
-
+    // 예약 상태 업데이트 메소드 (resCheck 값 업데이트)
+    public void updateReservationStatus(String resNo, String resCheck) throws SQLException {
+        String sql = "UPDATE st_reservations SET res_check = ? WHERE res_no = ?";
+        try (Connection conn = DBUtil.getConnection();
+             PreparedStatement pstmt = conn.prepareStatement(sql)) {
+            pstmt.setString(1, resCheck);
+            pstmt.setString(2, resNo);
+            pstmt.executeUpdate();
+        }
+    }
     // 예약 정보 삽입 (Create)
     public void addReservation(Reservation reservation) throws SQLException {
         String sql = "INSERT INTO st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success, res_check) VALUES (reservSeq.nextval, ?, ?, ?, ?, ?, ?, ?)";

@@ -32,7 +32,7 @@ public class CustomerDAO {
     public boolean isCustomerExist(String cusId) throws SQLException {
         String sql = "SELECT COUNT(*) FROM st_customers WHERE cus_id = ?";
         try (Connection conn = DBUtil.getConnection();
-             PreparedStatement pstmt = conn.prepareStatement(sql)) {
+            PreparedStatement pstmt = conn.prepareStatement(sql)) {
             pstmt.setString(1, cusId);
             try (ResultSet rs = pstmt.executeQuery()) {
                 if (rs.next() && rs.getInt(1) > 0) {
@@ -84,16 +84,16 @@ public class CustomerDAO {
 
     // 고객 정보 수정 (Update)
     public void updateCustomer(Customer customer) throws SQLException {
-        String sql = "UPDATE st_customers SET cus_pw = ?, cus_name = ?, cus_phone = ? WHERE cus_id = ?";
+        String sql = "UPDATE st_customers SET cus_pw = ?, cus_phone = ? WHERE cus_id = ?";
         try (Connection conn = DBUtil.getConnection();
              PreparedStatement pstmt = conn.prepareStatement(sql)) {
             pstmt.setString(1, customer.getCusPw());
-            pstmt.setString(2, customer.getCusName());
-            pstmt.setString(3, customer.getCusPhone());
-            pstmt.setString(4, customer.getCusId());
+            pstmt.setString(2, customer.getCusPhone());
+            pstmt.setString(3, customer.getCusId());
             pstmt.executeUpdate();
         }
     }
+
 
     // 고객 정보 삭제 (Delete)
     public void deleteCustomer(String cusId) throws SQLException {

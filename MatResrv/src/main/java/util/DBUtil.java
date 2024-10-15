@@ -6,10 +6,11 @@ import java.sql.SQLException;
 
 public class DBUtil {
 
-    private static final String URL = "jdbc:oracle:thin:@localhost:1521:xe"; 
-    private static final String USER = "system";  
-    private static final String PASSWORD = "pass"; 
+    private static final String URL = "jdbc:oracle:thin:@localhost:1521:testdb"; 
+    private static final String USER = "scott";  
+    private static final String PASSWORD = "tiger"; 
     private static final String DRIVER_CLASS = "oracle.jdbc.driver.OracleDriver";  
+
 
     // 데이터베이스 연결을 반환하는 메서드
     public static Connection getConnection() throws SQLException {

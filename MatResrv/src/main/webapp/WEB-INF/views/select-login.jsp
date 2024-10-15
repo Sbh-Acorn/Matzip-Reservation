@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/MatResrv/css/header.css">
     <link rel="stylesheet" href="/MatResrv/css/selectLogin.css">
     <link rel="stylesheet" href="/MatResrv/css/font.css">
+    <script defer src="/MatResrv/js/header.js"></script>
     <script defer src="/MatResrv/js/selectLogin.js"></script>
 </head>
 <body>
@@ -45,10 +46,10 @@
                 <img src="/MatResrv/img/profile.svg" alt="" id="profile">
             </div>
             <!-- 프로필 닉네임과 간단한 한마디? -->
-            <div id="profile_info">
+           <!--  <div id="profile_info">
                 <p id="nickname">test123</p>
                 <p id="info">오늘도 잘 부탁드립니다</p>
-            </div>
+            </div>-->
         </div>
     </header>
     <main>
@@ -59,8 +60,8 @@
                 </div>
                 <p class="select_txt">고객 로그인</p>
             </div>
-            <div class="select">
-                <div class="select_img_wrap" id="storeLogin">
+            <div class="select" id="storeLogin">
+                <div class="select_img_wrap">
                     <img src="/MatResrv/img/manager.svg" alt="" class="select_img">
                 </div>
                 <p class="select_txt">점주 로그인</p>

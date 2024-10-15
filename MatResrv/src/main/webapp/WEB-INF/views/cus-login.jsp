@@ -35,14 +35,14 @@
                         아이디
                     </label>
                     <br>
-                    <input type="text" id="id" name="input_id" placeholder="아이디를 입력해주세요" required>
+                   	<input type="text" id="cusId" name="cusId" placeholder="아이디를 입력해주세요" required>
                 </div>
                 <div id="pw_wrap">
                     <label for="pw">
                         비밀번호
                     </label>
                     <br>
-                    <input type="text" id="pw" name="input_pw" placeholder="비밀번호를 입력해주세요" required>
+                    <input type="text" id="cusPw" name="cusPw" placeholder="비밀번호를 입력해주세요" required>
                 </div>
                 <button id="login">로그인</button>
             </form>
