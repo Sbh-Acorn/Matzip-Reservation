@@ -29,6 +29,7 @@
 	background-color: lightgray;
 	border: 1px solid black;
 	margin-top: 20px;
+	margin-left: 10px;
 	cursor: pointer;
 }
 
@@ -44,8 +45,8 @@
 }
 
 .info-box.large-box {
-	width: 800px;
-	height: 600px;
+	width: 750px;
+	height: 400px;
 	padding: 20px;
 	border: 1px solid black;
 	background-color: white;
@@ -68,6 +69,9 @@
 }
 
 img {
+	position: absolute;
+	right: 10px;
+	top: 10px;
 	width: 300px;
 }
 </style>
