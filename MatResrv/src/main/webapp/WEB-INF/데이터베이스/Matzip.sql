@@ -1,40 +1,53 @@
 
 
---°¡°Ô Å×ÀÌºí
+--ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ìºï¿½
 drop table owner_08;
 drop table st_reservations;
 drop table st_customers;
 drop table stores_08;
 commit;
 
-insert into stores_08 values('¼­¿ï ºÏºÎ', '±¤È­¹®¹ÌÁø', 'ÇÑ½Ä', '¼­¿ï Á¾·Î±¸ Á¾·Î 19 1Ãþ', '4.6', '1954³â °³¾÷ ÀüÅëÀÖ´Â ¸Þ¹Ð±¹¼öÁý');
-insert into stores_08 values('¼­¿ï ºÏºÎ', '´Éµ¿¹Ì³ª¸®', 'ÇÑ½Ä', '¼­¿ï ¿ë»ê±¸ ÇÑ°­´ë·Î40±æ 28 1, 2Ãþ', '4.7', '°õÅÁÀ» Á¤¸» ¸ÀÀÖ°Ô ¸ÔÀ» ¼ö ÀÖ´Â Áý! ½Å¿ë»ê¿ª °õÅÁ¸ÀÁý ´Éµ¿¹Ì³ª¸®');
-insert into stores_08 values('¼­¿ï ºÏºÎ', '´ãÅÃ', 'ÀÏ½Ä', '¼­¿ï ¸¶Æ÷±¸ µ¿±³·Î12¾È±æ 51 1Ãþ', '4.7', '¼¼·ÃµÇ¸é¼­µµ ±ò²ûÇÑ ¼öÇÁÀÇ ¸ÀÀÌ ¿©¿îÀ» ÁØ´Ù.');
-insert into stores_08 values('¼­¿ï ºÏºÎ', 'ÆÄ·Ñ¾Ø¶û±×', 'Ä«Æä/º£ÀÌÄ¿¸®', '¼­¿ï ¸¶Æ÷±¸ ¼º¹Ì»ê·Î29¾È±æ 8', '4.6', '³×¸ð³­ ÆÄÀÌ°¡ ±Í¿±°í ¸ÀÀÖ´Â ¿¬³²µ¿ µðÀúÆ® Ä«Æä');
-insert into stores_08 values('¼­¿ï ³²ºÎ', 'ÆÄÀÌºê°¡ÀÌÁî ¿©ÀÇµµ', '¾ç½Ä', '¼­¿ï ¿µµîÆ÷±¸ ¿©ÀÇ´ë·Î 108', '3.7', '¹Ì±¹ ´ëÇ¥ ÇÜ¹ö°Å ÇÁ·£Â÷ÀÌÁî' );
-insert into stores_08 values('¼­¿ï ³²ºÎ', 'Ã»¿Í¿Á º»Á¡', 'ÇÑ½Ä', '¼­¿ï ¼ÛÆÄ±¸ À§·Ê¼º´ë·Î 48 ¹Ýµµºôµù 1Ãþ', '4.7', '¼ø´ë±¹À¸·Î °æÇèÇÒ¼ö ÀÖ´Â ÃÖ»óÀÇ °¡Ä¡¸¦ µå¸®°Ú½À´Ï´Ù.');
-insert into stores_08 values('¼­¿ï ³²ºÎ', 'ÇØ¸ñ ·Ôµ¥¿ùµå¸ôÁ¡', 'ÀÏ½Ä', '¼­¿ï ¼ÛÆÄ±¸ ¿Ã¸²ÇÈ·Î 300 ·Ôµ¥¿ùµå¸ô 6Ãþ', '4.7', 'ÇØ¸ñÀº ³ª°í¾ß½Ä È÷Ã÷¸¶ºÎ½Ã(Àå¾îµ¤¹ä) Àü¹®Á¡ÀÔ´Ï´Ù.');
-insert into stores_08 values('¼­¿ï ³²ºÎ', '±îÆû', '¾Æ½Ã¾Æ½Ä', '¼­¿ï °­³²±¸ ¼±¸ª·Î153±æ 18 ÁöÇÏ1Ãþ', '4.7', 'ÇÑ±¹È­µÇÁö ¾ÊÀº ÁøÂ¥ ÇöÁöÀÇ ÅÂ±¹¸ÀÀ» ´À²¸º¸¼¼¿ä.');
-insert into stores_08 values('°æ±â ºÏºÎ', 'ÀÚ¹Ý°í ¾çÁÖº»Á¡', 'ÇÑ½Ä', '°æ±â ¾çÁÖ½Ã ±¤»ç·Î 152 1Ãþ', '4.6', 'ÇÁ¸®¹Ì¾ö È­´ö »ý¼±±¸ÀÌ Àü¹®Á¡.');
-insert into stores_08 values('°æ±â ºÏºÎ', '½º½ÃÈ÷·Î¹Ì','ÀÏ½Ä' , '°æ±â ÀÇÁ¤ºÎ½Ã ¹ß°î·Î 24 ¼­¿ïÇÁ¶óÀÚ 201È£', '4.2', 'ÀÇÁ¤ºÎ¿¡¼­ 17³âµ¿¾È ÃÊ¹ä ¸ÀÁýÀ¸·Î ¼Ò¹®³­ ÀúÈñ´Â [½º½ÃÈ÷·Î¹Ì]ÀÔ´Ï´Ù.');
-insert into stores_08 values('°æ±â ºÏºÎ', 'ÆÄÅ©ÇÁ¸®º£', 'Ä«Æä/º£ÀÌÄ¿¸®','°æ±â ÀÇÁ¤ºÎ½Ã µ¿ÀÏ·Î192¹ø±æ 28-27', '4.3', '³ª¸¸ÀÇ °¡Ä¡¸¦ ´©¸± ¼ö ÀÖ´Â µðÀúÆ® Ä«Æä, ÀÌÅ»¸®¾È ·¹½ºÅä¶ûÀÔ´Ï´Ù.');
-insert into stores_08 values('°æ±â ºÏºÎ', 'ºÏÇÑ°­µ¹Â¥Àå', 'Áß½Ä','°æ±â ³²¾çÁÖ½Ã È­µµÀ¾ ºÏÇÑ°­·Î1112¹ø±æ 6', '4.4', '¸ÅÄÞÇÑ °¥ºñÂò°ú ÇÔ²²¸Ô´Â ¶ß°Å¿î µ¹Â¥ÀåÀº ÃÖ°íÀÇ ÄÞºñÀÔ´Ï´Ù.');
-insert into stores_08 values('°æ±â ³²ºÎ', 'ÃÖ¹Ì»ï¼ø´ë±¹','ÇÑ½Ä', '°æ±â È­¼º½Ã µ¿ÅºÁö¼º·Î 187 1Ãþ', '4.5', 'µ¿Åº ±¹¹ä ¸ÀÁý ¼Ò°í±â±¹¹ä ¸ÀÀÖ´Â ÃÖ¹Ì»ï¼ø´ë±¹');
-insert into stores_08 values('°æ±â ³²ºÎ', '·Î¸¶°æ¾ç½Ä', '¾ç½Ä','°æ±â ¼ö¿ø½Ã ÆÈ´Þ±¸ °æ¼ö´ë·Î 549 µ¿¼ö¿øºôµù 1Ãþ', '4.4', '34³â ÀüÅë°æ¾ç½ÄÀ» ÀÌ¾î°¡´Â ¿¾³¯µ·±î½º , ÇÔ¹Ú½ºÅØ Àü¹®Á¡ ÀÔ´Ï´Ù.');
-insert into stores_08 values('°æ±â ³²ºÎ', 'Æ÷»çÀÌ', '¾Æ½Ã¾Æ½Ä','°æ±â ±¤ÁÖ½Ã ÅðÃÌ¸é Á¤¿µ·Î 574', '4.7', '¹éÁ¾¿ø ¾ÆÀú¾¾µµ ÀÎÁ¤ÇÑ ½Ò±¹¼ö ¿ù³²½Ó ¸ÀÁý');
-insert into stores_08 values('°æ±â ³²ºÎ', 'ÈÌ±Å¾ß', 'ÀÏ½Ä','°æ±â ÇÏ³²½Ã ¹Ì»ç´ë·Î 750 ½ºÅ¸ÇÊµå ÇÏ³² GLÃþ G250È£', '4.0','È«ÅÁÀÇ ¾ó¾óÇÔ°ú ¸Å¿î¸ÀÀ» ÇÑ±¹ÀûÀ¸·Î ¸ÀÀÖ°Ô ±¸ÇöÇÏ¿´½À´Ï´Ù.');
-insert into stores_08 values('¼­¿ï ³²ºÎ', '´õÇÃ¶óÀ×ÆÒ·¹µå', 'Ä«Æä/º£ÀÌÄ¿¸®','¼­¿ï ¼­ÃÊ±¸ ¼­ÃÊ´ë·Î 411 ÁöÆ¼Å¸¿ö ÁöÇÏ1Ãþ', '4.0','¿Ãµ¥ÀÌ ºê·±Ä¡ ±×¸®°í ÆÄ½ºÅ¸, »ø·¯µå µî ´Ù¾çÇÑ ¸Þ´º¸¦ Áñ±â ¼ö ÀÖ½À´Ï´Ù.');
-insert into stores_08 values('°æ±â ºÏºÎ', 'ÀåÀÎ´õ', 'Ä«Æä/º£ÀÌÄ¿¸®','°æ±â Æ÷Ãµ½Ã ¼ÒÈêÀ¾ ±¤¸ª¼ö¸ñ¿ø·Î 1090-4', '4.4','ÇÑ°úÀÇ ¸À°ú ¾Æ¸§´Ù¿òÀ» Çö´ë¿¡ Àü´ÞÇÕ´Ï´Ù.');
-insert into stores_08 values('°æ±â ³²ºÎ', 'µÎ¼¼¸£', 'Ä«Æä/º£ÀÌÄ¿¸®','°æ±â ¼º³²½Ã ºÐ´ç±¸ ¹Ì±ÝÀÏ·Î74¹ø±æ 23', '4.9','¸ð´øÇÑ ºÐÀ§±âÀÇ ÄÉÀÌÅ©');
-insert into stores_08 values('¼­¿ï ºÏºÎ', '´ÙÀÌ´×¿ø', 'ÀÏ½Ä','¼­¿ï µ¿´ë¹®±¸ °í»êÀÚ·Î32±æ 78 2Ãþ', '4.5','10¿©³â°£ÀÇ ³ëÇÏ¿ì·Î ½ÃÀÛÇÑ ÇÁ¸®¹Ì¾ö ºßÆä ´ÙÀÌ´×¿øÀÔ´Ï´Ù.');
-insert into stores_08 values('¼­¿ï ºÏºÎ', 'ÁøÁø', 'Áß½Ä','¼­¿ï ¸¶Æ÷±¸ ¿ùµåÄÅºÏ·Î1±æ 60 1Ãþ', '4.1','¿ÕÀ°¼º, È²Áø¼± ¼ÎÇÁ°¡ ¸¸µç ÀüÅë Áß±¹ ¿ä¸®¿Í Çö´ë Áß±¹ ¿ä¸®ÀÇ Á¶È­.');
-insert into stores_08 values('°æ±â ³²ºÎ', 'ÆÈ¼±»ý', 'Áß½Ä','°æ±â ¿ëÀÎ½Ã ±âÈï±¸ Á×Àü·Î43¹ø±æ 11-25', '4.3','ÀÌ»öÀûÀÎ Áß½Ä ¿ä¸®¸¦ ¼±º¸ÀÌ´Â º¸Á¤µ¿ÀÇ Áß½Ä´çÀÔ´Ï´Ù.');
-insert into stores_08 values('¼­¿ï ºÏºÎ', '¸Å¶õ¹æ', 'Áß½Ä','¼­¿ï ¼ºµ¿±¸ ¿Õ½Ê¸®±¤Àå·Î 17 2Ãþ ¿ª¹«1È£', '4.1','Ä³ÁÖ¾ó Â÷ÀÌ´ÏÁî Å°Ä£ÀÇ Á¤¼ö ¸Å¶õ¹æÀÔ´Ï´Ù!');
-insert into stores_08 values('¼­¿ï ³²ºÎ', '¼ÛÁ×Àå', 'Áß½Ä','¼­¿ï ¿µµîÆ÷±¸ ¹®·¡·Î 203', '3.8','¸ÀÀÖ´Â ³à¼®µé Ãâ¿¬ ¸ÀÁý ¼ÛÁ×ÀåÀÔ´Ï´Ù.');
-insert into stores_08 values('°æ±â ºÏºÎ', '¿Ã¸®¾Ø', '¾ç½Ä','°æ±â ³²¾çÁÖ½Ã È­µµÀ¾ ¸Ëµ¹·Î 34 Bµ¿ 1Ãþ', '4.3','¿ì¸®¸ö¿¡ ÀÌ·Î¿î À½½Ä°ú ÃÖ»óÀÇ ¼­ºñ½º¿Í ¸ÀÀ» ÀÚºÎÇÏ´Â ·¹½ºÅä¶ûÀÔ´Ï´Ù.');
-insert into stores_08 values('¼­¿ï ºÏºÎ', '¿ø µð±×¸® ³ë½º', '¾Æ½Ã¾Æ½Ä','¼­¿ï ¼ºµ¿±¸ ¼º¼öÀÌ·Î10±æ 14 102È£', '4.9','¹Ì½¦¸°°¡ÀÌµå º÷±¸¸£¸Á ÀüÅë È­´ö ¾Æ½Ã¾È ¹Ùº£Å¥!');
-insert into stores_08 values('¼­¿ï ³²ºÎ', 'ÆÄÆÄ¾ß¸®ÇÁ', '¾Æ½Ã¾Æ½Ä','¼­¿ï °­³²±¸ °­³²´ë·Î102±æ 29', '4.5','Æ®·ÎÇÇÄ® ¾Æ½Ã¾Æ Áö¿ªÀÇ ¸Þ´º¸¦ Çö´ëÀû °¨¼ºÀ¸·Î Ç®¾î³½ ·¹½ºÅä¶û ÀÔ´Ï´Ù.');
-insert into stores_08 values('¼­¿ï ºÏºÎ', '¿¡ÀÌ½Ã¾È', '¾Æ½Ã¾Æ½Ä','¼­¿ï ¸¶Æ÷±¸ ¿Í¿ì»ê·Î13±æ 31 1Ãþ', '4.3','Ç»Àü¾Æ½Ã¾È¿ä¸®ÁÖÁ¡ ¿¡ÀÌ½Ã¾ÈÀÔ´Ï´Ù.');
+create table stores_08(
+     region varchar2(20) not null,
+     st_name varchar2(30) not null primary key,
+     menu_category varchar2(20),
+     st_address varchar2(100),
+     st_rate varchar2(5),
+     st_description varchar2(100)
+);      
+
+commit;
+
+
+
+insert into stores_08 values('ï¿½ï¿½ï¿½ï¿½ ï¿½Ïºï¿½', 'ï¿½ï¿½È­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½', 'ï¿½Ñ½ï¿½', 'ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Î±ï¿½ ï¿½ï¿½ï¿½ï¿½ 19 1ï¿½ï¿½', '4.6', '1954ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ö´ï¿½ ï¿½Þ¹Ð±ï¿½ï¿½ï¿½ï¿½ï¿½');
+insert into stores_08 values('ï¿½ï¿½ï¿½ï¿½ ï¿½Ïºï¿½', 'ï¿½Éµï¿½ï¿½Ì³ï¿½ï¿½ï¿½', 'ï¿½Ñ½ï¿½', 'ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ê±¸ ï¿½Ñ°ï¿½ï¿½ï¿½ï¿½40ï¿½ï¿½ 28 1, 2ï¿½ï¿½', '4.7', 'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ö°ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ö´ï¿½ ï¿½ï¿½! ï¿½Å¿ï¿½ê¿ª ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Éµï¿½ï¿½Ì³ï¿½ï¿½ï¿½');
+insert into stores_08 values('ï¿½ï¿½ï¿½ï¿½ ï¿½Ïºï¿½', 'ï¿½ï¿½ï¿½ï¿½', 'ï¿½Ï½ï¿½', 'ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½12ï¿½È±ï¿½ 51 1ï¿½ï¿½', '4.7', 'ï¿½ï¿½ï¿½ÃµÇ¸é¼­ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ø´ï¿½.');
+insert into stores_08 values('ï¿½ï¿½ï¿½ï¿½ ï¿½Ïºï¿½', 'ï¿½Ä·Ñ¾Ø¶ï¿½ï¿½ï¿½', 'Ä«ï¿½ï¿½/ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½', 'ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ì»ï¿½ï¿½29ï¿½È±ï¿½ 8', '4.6', 'ï¿½×¸ï¿½ ï¿½ï¿½ï¿½Ì°ï¿½ ï¿½Í¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ö´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Æ® Ä«ï¿½ï¿½');
+insert into stores_08 values('ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½', 'ï¿½ï¿½ï¿½Ìºê°¡ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Çµï¿½', 'ï¿½ï¿½ï¿½', 'ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ç´ï¿½ï¿½ 108', '3.7', 'ï¿½Ì±ï¿½ ï¿½ï¿½Ç¥ ï¿½Ü¹ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½' );
+insert into stores_08 values('ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½', 'Ã»ï¿½Í¿ï¿½ ï¿½ï¿½ï¿½ï¿½', 'ï¿½Ñ½ï¿½', 'ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ä±ï¿½ ï¿½ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ 48 ï¿½Ýµï¿½ï¿½ï¿½ï¿½ï¿½ 1ï¿½ï¿½', '4.7', 'ï¿½ï¿½ï¿½ë±¹ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ò¼ï¿½ ï¿½Ö´ï¿½ ï¿½Ö»ï¿½ï¿½ï¿½ ï¿½ï¿½Ä¡ï¿½ï¿½ ï¿½å¸®ï¿½Ú½ï¿½ï¿½Ï´ï¿½.');
+insert into stores_08 values('ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½', 'ï¿½Ø¸ï¿½ ï¿½Ôµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½', 'ï¿½Ï½ï¿½', 'ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ä±ï¿½ ï¿½Ã¸ï¿½ï¿½È·ï¿½ 300 ï¿½Ôµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 6ï¿½ï¿½', '4.7', 'ï¿½Ø¸ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ß½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î½ï¿½(ï¿½ï¿½îµ¤ï¿½ï¿½) ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô´Ï´ï¿½.');
+insert into stores_08 values('ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½', 'ï¿½ï¿½ï¿½ï¿½', 'ï¿½Æ½Ã¾Æ½ï¿½', 'ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½153ï¿½ï¿½ 18 ï¿½ï¿½ï¿½ï¿½1ï¿½ï¿½', '4.7', 'ï¿½Ñ±ï¿½È­ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Â¥ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Â±ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.');
+insert into stores_08 values('ï¿½ï¿½ï¿½ ï¿½Ïºï¿½', 'ï¿½Ú¹Ý°ï¿½ ï¿½ï¿½ï¿½Öºï¿½ï¿½ï¿½', 'ï¿½Ñ½ï¿½', 'ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ö½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ 152 1ï¿½ï¿½', '4.6', 'ï¿½ï¿½ï¿½ï¿½ï¿½Ì¾ï¿½ È­ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.');
+insert into stores_08 values('ï¿½ï¿½ï¿½ ï¿½Ïºï¿½', 'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î¹ï¿½','ï¿½Ï½ï¿½' , 'ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Î½ï¿½ ï¿½ß°ï¿½ï¿½ 24 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 201È£', '4.2', 'ï¿½ï¿½ï¿½ï¿½ï¿½Î¿ï¿½ï¿½ï¿½ 17ï¿½âµ¿ï¿½ï¿½ ï¿½Ê¹ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ò¹ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ [ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î¹ï¿½]ï¿½Ô´Ï´ï¿½.');
+insert into stores_08 values('ï¿½ï¿½ï¿½ ï¿½Ïºï¿½', 'ï¿½ï¿½Å©ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½', 'Ä«ï¿½ï¿½/ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½','ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Î½ï¿½ ï¿½ï¿½ï¿½Ï·ï¿½192ï¿½ï¿½ï¿½ï¿½ 28-27', '4.3', 'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ä¡ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ö´ï¿½ ï¿½ï¿½ï¿½ï¿½Æ® Ä«ï¿½ï¿½, ï¿½ï¿½Å»ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô´Ï´ï¿½.');
+insert into stores_08 values('ï¿½ï¿½ï¿½ ï¿½Ïºï¿½', 'ï¿½ï¿½ï¿½Ñ°ï¿½ï¿½ï¿½Â¥ï¿½ï¿½', 'ï¿½ß½ï¿½','ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ö½ï¿½ È­ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ñ°ï¿½ï¿½ï¿½1112ï¿½ï¿½ï¿½ï¿½ 6', '4.4', 'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ô²ï¿½ï¿½Ô´ï¿½ ï¿½ß°Å¿ï¿½ ï¿½ï¿½Â¥ï¿½ï¿½ï¿½ï¿½ ï¿½Ö°ï¿½ï¿½ï¿½ ï¿½Þºï¿½ï¿½Ô´Ï´ï¿½.');
+insert into stores_08 values('ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½', 'ï¿½Ö¹Ì»ï¿½ï¿½ï¿½ë±¹','ï¿½Ñ½ï¿½', 'ï¿½ï¿½ï¿½ È­ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Åºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 187 1ï¿½ï¿½', '4.5', 'ï¿½ï¿½Åº ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ò°ï¿½â±¹ï¿½ï¿½ ï¿½ï¿½ï¿½Ö´ï¿½ ï¿½Ö¹Ì»ï¿½ï¿½ï¿½ë±¹');
+insert into stores_08 values('ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½', 'ï¿½Î¸ï¿½ï¿½ï¿½ï¿½ï¿½', 'ï¿½ï¿½ï¿½','ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½È´Þ±ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 549 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 1ï¿½ï¿½', '4.4', '34ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ì¾î°¡ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½î½º , ï¿½Ô¹Ú½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ô´Ï´ï¿½.');
+insert into stores_08 values('ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½', 'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½', 'ï¿½Æ½Ã¾Æ½ï¿½','ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ö½ï¿½ ï¿½ï¿½ï¿½Ì¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 574', '4.7', 'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ò±ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½');
+insert into stores_08 values('ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½', 'ï¿½Ì±Å¾ï¿½', 'ï¿½Ï½ï¿½','ï¿½ï¿½ï¿½ ï¿½Ï³ï¿½ï¿½ï¿½ ï¿½Ì»ï¿½ï¿½ï¿½ 750 ï¿½ï¿½Å¸ï¿½Êµï¿½ ï¿½Ï³ï¿½ GLï¿½ï¿½ G250È£', '4.0','È«ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ô°ï¿½ ï¿½Å¿ï¿½ï¿½ï¿½ï¿½ ï¿½Ñ±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ö°ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¿ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.');
+insert into stores_08 values('ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½', 'ï¿½ï¿½ï¿½Ã¶ï¿½ï¿½ï¿½ï¿½Ò·ï¿½ï¿½ï¿½', 'Ä«ï¿½ï¿½/ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½','ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ê±ï¿½ ï¿½ï¿½ï¿½Ê´ï¿½ï¿½ 411 ï¿½ï¿½Æ¼Å¸ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½1ï¿½ï¿½', '4.0','ï¿½Ãµï¿½ï¿½ï¿½ ï¿½ê·±Ä¡ ï¿½×¸ï¿½ï¿½ï¿½ ï¿½Ä½ï¿½Å¸, ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ù¾ï¿½ï¿½ï¿½ ï¿½Þ´ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ö½ï¿½ï¿½Ï´ï¿½.');
+insert into stores_08 values('ï¿½ï¿½ï¿½ ï¿½Ïºï¿½', 'ï¿½ï¿½ï¿½Î´ï¿½', 'Ä«ï¿½ï¿½/ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½','ï¿½ï¿½ï¿½ ï¿½ï¿½Ãµï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 1090-4', '4.4','ï¿½Ñ°ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Æ¸ï¿½ï¿½Ù¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ë¿¡ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½.');
+insert into stores_08 values('ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½', 'ï¿½Î¼ï¿½ï¿½ï¿½', 'Ä«ï¿½ï¿½/ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½','ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ð´ç±¸ ï¿½Ì±ï¿½ï¿½Ï·ï¿½74ï¿½ï¿½ï¿½ï¿½ 23', '4.9','ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Å©');
+insert into stores_08 values('ï¿½ï¿½ï¿½ï¿½ ï¿½Ïºï¿½', 'ï¿½ï¿½ï¿½Ì´×¿ï¿½', 'ï¿½Ï½ï¿½','ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ë¹®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ú·ï¿½32ï¿½ï¿½ 78 2ï¿½ï¿½', '4.5','10ï¿½ï¿½ï¿½â°£ï¿½ï¿½ ï¿½ï¿½ï¿½Ï¿ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ì¾ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ì´×¿ï¿½ï¿½Ô´Ï´ï¿½.');
+insert into stores_08 values('ï¿½ï¿½ï¿½ï¿½ ï¿½Ïºï¿½', 'ï¿½ï¿½ï¿½ï¿½', 'ï¿½ß½ï¿½','ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ÅºÏ·ï¿½1ï¿½ï¿½ 60 1ï¿½ï¿½', '4.1','ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½, È²ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ß±ï¿½ ï¿½ä¸®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ß±ï¿½ ï¿½ä¸®ï¿½ï¿½ ï¿½ï¿½È­.');
+insert into stores_08 values('ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½', 'ï¿½È¼ï¿½ï¿½ï¿½', 'ï¿½ß½ï¿½','ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Î½ï¿½ ï¿½ï¿½ï¿½ï±¸ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½43ï¿½ï¿½ï¿½ï¿½ 11-25', '4.3','ï¿½Ì»ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ß½ï¿½ ï¿½ä¸®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ì´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ß½Ä´ï¿½ï¿½Ô´Ï´ï¿½.');
+insert into stores_08 values('ï¿½ï¿½ï¿½ï¿½ ï¿½Ïºï¿½', 'ï¿½Å¶ï¿½ï¿½ï¿½', 'ï¿½ß½ï¿½','ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Õ½Ê¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 17 2ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½1È£', '4.1','Ä³ï¿½Ö¾ï¿½ ï¿½ï¿½ï¿½Ì´ï¿½ï¿½ï¿½ Å°Ä£ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Å¶ï¿½ï¿½ï¿½ï¿½Ô´Ï´ï¿½!');
+insert into stores_08 values('ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½', 'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½', 'ï¿½ß½ï¿½','ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 203', '3.8','ï¿½ï¿½ï¿½Ö´ï¿½ ï¿½à¼®ï¿½ï¿½ ï¿½â¿¬ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô´Ï´ï¿½.');
+insert into stores_08 values('ï¿½ï¿½ï¿½ ï¿½Ïºï¿½', 'ï¿½Ã¸ï¿½ï¿½ï¿½', 'ï¿½ï¿½ï¿½','ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ö½ï¿½ È­ï¿½ï¿½ï¿½ï¿½ ï¿½Ëµï¿½ï¿½ï¿½ 34 Bï¿½ï¿½ 1ï¿½ï¿½', '4.3','ï¿½ì¸®ï¿½ï¿½ï¿½ï¿½ ï¿½Ì·Î¿ï¿½ ï¿½ï¿½ï¿½Ä°ï¿½ ï¿½Ö»ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ñ½º¿ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Úºï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô´Ï´ï¿½.');
+insert into stores_08 values('ï¿½ï¿½ï¿½ï¿½ ï¿½Ïºï¿½', 'ï¿½ï¿½ ï¿½ï¿½×¸ï¿½ ï¿½ë½º', 'ï¿½Æ½Ã¾Æ½ï¿½','ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ì·ï¿½10ï¿½ï¿½ 14 102È£', '4.9','ï¿½Ì½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ìµï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ È­ï¿½ï¿½ ï¿½Æ½Ã¾ï¿½ ï¿½Ùºï¿½Å¥!');
+insert into stores_08 values('ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½', 'ï¿½ï¿½ï¿½Ä¾ß¸ï¿½ï¿½ï¿½', 'ï¿½Æ½Ã¾Æ½ï¿½','ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½102ï¿½ï¿½ 29', '4.5','Æ®ï¿½ï¿½ï¿½ï¿½Ä® ï¿½Æ½Ã¾ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Þ´ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Ç®ï¿½î³½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ô´Ï´ï¿½.');
+insert into stores_08 values('ï¿½ï¿½ï¿½ï¿½ ï¿½Ïºï¿½', 'ï¿½ï¿½ï¿½Ì½Ã¾ï¿½', 'ï¿½Æ½Ã¾Æ½ï¿½','ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Í¿ï¿½ï¿½ï¿½13ï¿½ï¿½ 31 1ï¿½ï¿½', '4.3','Ç»ï¿½ï¿½ï¿½Æ½Ã¾È¿ä¸®ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ì½Ã¾ï¿½ï¿½Ô´Ï´ï¿½.');
 
 create table st_customers(
      cus_id varchar2(20) not null,
@@ -45,49 +58,19 @@ create table st_customers(
 
 commit;
 
-INSERT INTO st_customers VALUES ('a3b1c2d4e5', 'pass1234', '±è¹Î¼ö', '01012345678');
-INSERT INTO st_customers VALUES ('f6g7h8i9j0', 'pass2345', 'ÀÌ¿µÈñ', '01023456789');
-INSERT INTO st_customers VALUES ('k1l2m3n4o5', 'pass3456', '¹ÚÁöÈÆ', '01034567890');
-INSERT INTO st_customers VALUES ('p6q7r8s9t0', 'pass4567', 'ÃÖ¼öÁø', '01045678901');
-INSERT INTO st_customers VALUES ('u1v2w3x4y5', 'pass5678', 'Á¤¿ì¼º', '01056789012');
-INSERT INTO st_customers VALUES ('z6a7b8c9d0', 'pass6789', '¹è¼öÁö', '01067890123');
-INSERT INTO st_customers VALUES ('e1f2g3h4i5', 'pass7890', 'ÀÓÇÏ³ª', '01078901234');
-INSERT INTO st_customers VALUES ('j6k7l8m9n0', 'pass8901', '¹ÚÇö¼ö', '01089012345');
-INSERT INTO st_customers VALUES ('o1p2q3r4s5', 'pass9012', '±è¹Î¼®', '01090123456');
-INSERT INTO st_customers VALUES ('t6u7v8w9x0', 'pass0123', '±è¹ÎÁö', '01001234567');
+INSERT INTO st_customers VALUES ('a3b1c2d4e5', 'pass1234', 'ï¿½ï¿½Î¼ï¿½', '01012345678');
+INSERT INTO st_customers VALUES ('f6g7h8i9j0', 'pass2345', 'ï¿½Ì¿ï¿½ï¿½ï¿½', '01023456789');
+INSERT INTO st_customers VALUES ('k1l2m3n4o5', 'pass3456', 'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½', '01034567890');
+INSERT INTO st_customers VALUES ('p6q7r8s9t0', 'pass4567', 'ï¿½Ö¼ï¿½ï¿½ï¿½', '01045678901');
+INSERT INTO st_customers VALUES ('u1v2w3x4y5', 'pass5678', 'ï¿½ï¿½ï¿½ì¼º', '01056789012');
+INSERT INTO st_customers VALUES ('z6a7b8c9d0', 'pass6789', 'ï¿½ï¿½ï¿½ï¿½ï¿½', '01067890123');
+INSERT INTO st_customers VALUES ('e1f2g3h4i5', 'pass7890', 'ï¿½ï¿½ï¿½Ï³ï¿½', '01078901234');
+INSERT INTO st_customers VALUES ('j6k7l8m9n0', 'pass8901', 'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½', '01089012345');
+INSERT INTO st_customers VALUES ('o1p2q3r4s5', 'pass9012', 'ï¿½ï¿½Î¼ï¿½', '01090123456');
+INSERT INTO st_customers VALUES ('t6u7v8w9x0', 'pass0123', 'ï¿½ï¿½ï¿½ï¿½ï¿½', '01001234567');
 commit;
 
-create sequence reservSeq  start with 1;
 
-insert into st_reservations(  res_no  , res_store  ,  res_name  ,res_date , res_time, number_of_pp, res_success, res_check ) values ( reservSeq.nextval  ,  '±¤È­¹®¹ÌÁø'  ,'±è¹Î¼ö' ,'20241008', '12:00', '4', '1', 'Y' );
-insert into st_reservations(  res_no  , res_store  ,  res_name  ,res_date , res_time, number_of_pp, res_success ) values ( reservSeq.nextval  ,  'ÆÄ·Ñ¾Ø¶û±×'  ,'±è¹ÎÁö' ,'20241024', '17:00', '2', '1' );
-
-
-
--- 10¿ù 20ÀÏ ÀÌÀü ¿¹¾à (res_check Æ÷ÇÔ)
-insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success, res_check) values (reservSeq.nextval, '±¤È­¹®¹ÌÁø', '±è¹Î¼ö', '20241008', '12:00', '4', '1', 'Y');
-insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success, res_check) values (reservSeq.nextval, 'Ã»¿Í¿Á º»Á¡', 'ÀÌ¿µÈñ', '20241009', '18:00', '3', '1', 'Y');
-insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success, res_check) values (reservSeq.nextval, '´Éµ¿¹Ì³ª¸®', '¹ÚÁöÈÆ', '20241010', '19:30', '2', '1', 'Y');
-insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success, res_check) values (reservSeq.nextval, 'ÇØ¸ñ ·Ôµ¥¿ùµå¸ôÁ¡', 'ÃÖ¼öÁø', '20241011', '20:00', '5', '1', 'Y');
-insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success, res_check) values (reservSeq.nextval, 'ÀÚ¹Ý°í ¾çÁÖº»Á¡', 'Á¤¿ì¼º', '20241012', '13:30', '4', '1', 'Y');
-insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success, res_check) values (reservSeq.nextval, 'ÃÖ¹Ì»ï¼ø´ë±¹', '¹è¼öÁö', '20241013', '11:00', '3', '1', 'N');
-insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success, res_check) values (reservSeq.nextval, 'ÆÈ¼±»ý', 'ÀÓÇÏ³ª', '20241014', '19:00', '2', '1', 'N');
-insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success, res_check) values (reservSeq.nextval, 'Æ÷»çÀÌ', '±è¹Î¼®', '20241015', '17:30', '2', '1', 'Y');
-insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success, res_check) values (reservSeq.nextval, '´ãÅÃ', '±è¹ÎÁö', '20241016', '20:00', '3', '1', 'Y');
-insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success, res_check) values (reservSeq.nextval, '´ÙÀÌ´×¿ø', '¹ÚÇö¼ö', '20241017', '18:00', '4', '1', 'Y');
-insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success, res_check) values (reservSeq.nextval, '´ÙÀÌ´×¿ø', '±è¹Î¼ö', '20241018', '19:00', '5', '1', 'Y');
-insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success, res_check) values (reservSeq.nextval, 'ÀåÀÎ´õ', 'ÀÌ¿µÈñ', '20241019', '13:30', '2', '1', 'N');
-
--- 10¿ù 20ÀÏ ÀÌÈÄ ¿¹¾à (res_check Á¦¿Ü)
-insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success) values (reservSeq.nextval, '½º½ÃÈ÷·Î¹Ì', '¹ÚÁöÈÆ', '20241020', '20:30', '3', '1');
-insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success) values (reservSeq.nextval, '´õÇÃ¶óÀ×ÆÒ·¹µå', 'ÃÖ¼öÁø', '20241021', '12:00', '4', '1');
-insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success) values (reservSeq.nextval, 'ºÏÇÑ°­µ¹Â¥Àå', 'Á¤¿ì¼º', '20241022', '18:30', '2', '1');
-insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success) values (reservSeq.nextval, 'ÈÌ±Å¾ß', '¹è¼öÁö', '20241023', '17:00', '6', '1');
-insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success) values (reservSeq.nextval, '·Î¸¶°æ¾ç½Ä', 'ÀÓÇÏ³ª', '20241024', '19:00', '3', '1');
-insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success) values (reservSeq.nextval, '¼ÛÁ×Àå', '±è¹Î¼®', '20241025', '20:00', '4', '1');
-insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success) values (reservSeq.nextval, '¿Ã¸®¾Ø', '±è¹ÎÁö', '20241026', '12:30', '2', '1');
-insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success) values (reservSeq.nextval, '±¤È­¹®¹ÌÁø', '¹ÚÇö¼ö', '20241027', '13:00', '5', '1');
-commit;
 
 
 create table st_reservations(
@@ -102,6 +85,39 @@ create table st_reservations(
 );
 commit;
 
+create sequence reservSeq  start with 1;
+
+insert into st_reservations(  res_no  , res_store  ,  res_name  ,res_date , res_time, number_of_pp, res_success, res_check ) values ( reservSeq.nextval  ,  'ï¿½ï¿½È­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½'  ,'ï¿½ï¿½Î¼ï¿½' ,'20241008', '12:00', '4', '1', 'Y' );
+insert into st_reservations(  res_no  , res_store  ,  res_name  ,res_date , res_time, number_of_pp, res_success ) values ( reservSeq.nextval  ,  'ï¿½Ä·Ñ¾Ø¶ï¿½ï¿½ï¿½'  ,'ï¿½ï¿½ï¿½ï¿½ï¿½' ,'20241024', '17:00', '2', '1' );
+
+
+
+-- 10ï¿½ï¿½ 20ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ (res_check ï¿½ï¿½ï¿½ï¿½)
+insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success, res_check) values (reservSeq.nextval, 'ï¿½ï¿½È­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½', 'ï¿½ï¿½Î¼ï¿½', '20241008', '12:00', '4', '1', 'Y');
+insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success, res_check) values (reservSeq.nextval, 'Ã»ï¿½Í¿ï¿½ ï¿½ï¿½ï¿½ï¿½', 'ï¿½Ì¿ï¿½ï¿½ï¿½', '20241009', '18:00', '3', '1', 'Y');
+insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success, res_check) values (reservSeq.nextval, 'ï¿½Éµï¿½ï¿½Ì³ï¿½ï¿½ï¿½', 'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½', '20241010', '19:30', '2', '1', 'Y');
+insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success, res_check) values (reservSeq.nextval, 'ï¿½Ø¸ï¿½ ï¿½Ôµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½', 'ï¿½Ö¼ï¿½ï¿½ï¿½', '20241011', '20:00', '5', '1', 'Y');
+insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success, res_check) values (reservSeq.nextval, 'ï¿½Ú¹Ý°ï¿½ ï¿½ï¿½ï¿½Öºï¿½ï¿½ï¿½', 'ï¿½ï¿½ï¿½ì¼º', '20241012', '13:30', '4', '1', 'Y');
+insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success, res_check) values (reservSeq.nextval, 'ï¿½Ö¹Ì»ï¿½ï¿½ï¿½ë±¹', 'ï¿½ï¿½ï¿½ï¿½ï¿½', '20241013', '11:00', '3', '1', 'N');
+insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success, res_check) values (reservSeq.nextval, 'ï¿½È¼ï¿½ï¿½ï¿½', 'ï¿½ï¿½ï¿½Ï³ï¿½', '20241014', '19:00', '2', '1', 'N');
+insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success, res_check) values (reservSeq.nextval, 'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½', 'ï¿½ï¿½Î¼ï¿½', '20241015', '17:30', '2', '1', 'Y');
+insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success, res_check) values (reservSeq.nextval, 'ï¿½ï¿½ï¿½ï¿½', 'ï¿½ï¿½ï¿½ï¿½ï¿½', '20241016', '20:00', '3', '1', 'Y');
+insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success, res_check) values (reservSeq.nextval, 'ï¿½ï¿½ï¿½Ì´×¿ï¿½', 'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½', '20241017', '18:00', '4', '1', 'Y');
+insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success, res_check) values (reservSeq.nextval, 'ï¿½ï¿½ï¿½Ì´×¿ï¿½', 'ï¿½ï¿½Î¼ï¿½', '20241018', '19:00', '5', '1', 'Y');
+insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success, res_check) values (reservSeq.nextval, 'ï¿½ï¿½ï¿½Î´ï¿½', 'ï¿½Ì¿ï¿½ï¿½ï¿½', '20241019', '13:30', '2', '1', 'N');
+
+-- 10ï¿½ï¿½ 20ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ (res_check ï¿½ï¿½ï¿½ï¿½)
+insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success) values (reservSeq.nextval, 'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î¹ï¿½', 'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½', '20241020', '20:30', '3', '1');
+insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success) values (reservSeq.nextval, 'ï¿½ï¿½ï¿½Ã¶ï¿½ï¿½ï¿½ï¿½Ò·ï¿½ï¿½ï¿½', 'ï¿½Ö¼ï¿½ï¿½ï¿½', '20241021', '12:00', '4', '1');
+insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success) values (reservSeq.nextval, 'ï¿½ï¿½ï¿½Ñ°ï¿½ï¿½ï¿½Â¥ï¿½ï¿½', 'ï¿½ï¿½ï¿½ì¼º', '20241022', '18:30', '2', '1');
+insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success) values (reservSeq.nextval, 'ï¿½Ì±Å¾ï¿½', 'ï¿½ï¿½ï¿½ï¿½ï¿½', '20241023', '17:00', '6', '1');
+insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success) values (reservSeq.nextval, 'ï¿½Î¸ï¿½ï¿½ï¿½ï¿½ï¿½', 'ï¿½ï¿½ï¿½Ï³ï¿½', '20241024', '19:00', '3', '1');
+insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success) values (reservSeq.nextval, 'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½', 'ï¿½ï¿½Î¼ï¿½', '20241025', '20:00', '4', '1');
+insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success) values (reservSeq.nextval, 'ï¿½Ã¸ï¿½ï¿½ï¿½', 'ï¿½ï¿½ï¿½ï¿½ï¿½', '20241026', '12:30', '2', '1');
+insert into st_reservations (res_no, res_store, res_name, res_date, res_time, number_of_pp, res_success) values (reservSeq.nextval, 'ï¿½ï¿½È­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½', 'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½', '20241027', '13:00', '5', '1');
+commit;
+
+
 
 create table owner_08(
      store_name varchar2(30) references stores_08(st_name) primary key,
@@ -110,127 +126,127 @@ create table owner_08(
 );
 commit;
 
-insert into owner_08  values ('±¤È­¹®¹ÌÁø', '1234', '01011112222');
-insert into owner_08  values ('´Éµ¿¹Ì³ª¸®', '5678', '01022334455');
-insert into owner_08  values ('´ãÅÃ', '9101', '01033445566');
-insert into owner_08  values ('ÆÄ·Ñ¾Ø¶û±×', '1213', '01044556677');
-insert into owner_08  values ('ÆÄÀÌºê°¡ÀÌÁî ¿©ÀÇµµ', '1415', '01055667788');
-insert into owner_08  values ('Ã»¿Í¿Á º»Á¡', '1617', '01066778899');
-insert into owner_08  values ('ÇØ¸ñ ·Ôµ¥¿ùµå¸ôÁ¡', '1819', '01077889900');
-insert into owner_08  values ('±îÆû', '2021', '01088990011');
-insert into owner_08  values ('ÀÚ¹Ý°í ¾çÁÖº»Á¡', '2223', '01099001122');
-insert into owner_08  values ('½º½ÃÈ÷·Î¹Ì', '2425', '01010101234');
-insert into owner_08  values ('ÆÄÅ©ÇÁ¸®º£', '2627', '01021222334');
-insert into owner_08  values ('ºÏÇÑ°­µ¹Â¥Àå', '2829', '01032333445');
-insert into owner_08  values ('ÃÖ¹Ì»ï¼ø´ë±¹', '3031', '01043444556');
-insert into owner_08  values ('·Î¸¶°æ¾ç½Ä', '3233', '01054555667');
-insert into owner_08  values ('Æ÷»çÀÌ', '3435', '01065666778');
-insert into owner_08  values ('ÈÌ±Å¾ß', '3637', '01076777889');
-insert into owner_08  values ('´õÇÃ¶óÀ×ÆÒ·¹µå', '789012', '01078901234');
-insert into owner_08  values ('ÀåÀÎ´õ', '890123', '01089012345');
-insert into owner_08  values ('µÎ¼¼¸£', '901234', '01090123456');
-insert into owner_08  values ('´ÙÀÌ´×¿ø', '012345', '01001234567');
-insert into owner_08  values ('ÁøÁø', '123456', '01012345678');
-insert into owner_08  values ('ÆÈ¼±»ý', '234567', '01023456789');
-insert into owner_08  values ('¸Å¶õ¹æ', '345678', '01034567890');
-insert into owner_08  values ('¼ÛÁ×Àå', '456789', '01045678901');
-insert into owner_08  values ('¿Ã¸®¾Ø', '567890', '01056789012');
-insert into owner_08  values ('¿ø µð±×¸® ³ë½º', '678901', '01067890123');
-insert into owner_08  values ('ÆÄÆÄ¾ß¸®ÇÁ', '789012', '01078901234');
-insert into owner_08  values ('¿¡ÀÌ½Ã¾È', '890123', '01089012345');
+insert into owner_08  values ('ï¿½ï¿½È­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½', '1234', '01011112222');
+insert into owner_08  values ('ï¿½Éµï¿½ï¿½Ì³ï¿½ï¿½ï¿½', '5678', '01022334455');
+insert into owner_08  values ('ï¿½ï¿½ï¿½ï¿½', '9101', '01033445566');
+insert into owner_08  values ('ï¿½Ä·Ñ¾Ø¶ï¿½ï¿½ï¿½', '1213', '01044556677');
+insert into owner_08  values ('ï¿½ï¿½ï¿½Ìºê°¡ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Çµï¿½', '1415', '01055667788');
+insert into owner_08  values ('Ã»ï¿½Í¿ï¿½ ï¿½ï¿½ï¿½ï¿½', '1617', '01066778899');
+insert into owner_08  values ('ï¿½Ø¸ï¿½ ï¿½Ôµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½', '1819', '01077889900');
+insert into owner_08  values ('ï¿½ï¿½ï¿½ï¿½', '2021', '01088990011');
+insert into owner_08  values ('ï¿½Ú¹Ý°ï¿½ ï¿½ï¿½ï¿½Öºï¿½ï¿½ï¿½', '2223', '01099001122');
+insert into owner_08  values ('ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î¹ï¿½', '2425', '01010101234');
+insert into owner_08  values ('ï¿½ï¿½Å©ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½', '2627', '01021222334');
+insert into owner_08  values ('ï¿½ï¿½ï¿½Ñ°ï¿½ï¿½ï¿½Â¥ï¿½ï¿½', '2829', '01032333445');
+insert into owner_08  values ('ï¿½Ö¹Ì»ï¿½ï¿½ï¿½ë±¹', '3031', '01043444556');
+insert into owner_08  values ('ï¿½Î¸ï¿½ï¿½ï¿½ï¿½ï¿½', '3233', '01054555667');
+insert into owner_08  values ('ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½', '3435', '01065666778');
+insert into owner_08  values ('ï¿½Ì±Å¾ï¿½', '3637', '01076777889');
+insert into owner_08  values ('ï¿½ï¿½ï¿½Ã¶ï¿½ï¿½ï¿½ï¿½Ò·ï¿½ï¿½ï¿½', '789012', '01078901234');
+insert into owner_08  values ('ï¿½ï¿½ï¿½Î´ï¿½', '890123', '01089012345');
+insert into owner_08  values ('ï¿½Î¼ï¿½ï¿½ï¿½', '901234', '01090123456');
+insert into owner_08  values ('ï¿½ï¿½ï¿½Ì´×¿ï¿½', '012345', '01001234567');
+insert into owner_08  values ('ï¿½ï¿½ï¿½ï¿½', '123456', '01012345678');
+insert into owner_08  values ('ï¿½È¼ï¿½ï¿½ï¿½', '234567', '01023456789');
+insert into owner_08  values ('ï¿½Å¶ï¿½ï¿½ï¿½', '345678', '01034567890');
+insert into owner_08  values ('ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½', '456789', '01045678901');
+insert into owner_08  values ('ï¿½Ã¸ï¿½ï¿½ï¿½', '567890', '01056789012');
+insert into owner_08  values ('ï¿½ï¿½ ï¿½ï¿½×¸ï¿½ ï¿½ë½º', '678901', '01067890123');
+insert into owner_08  values ('ï¿½ï¿½ï¿½Ä¾ß¸ï¿½ï¿½ï¿½', '789012', '01078901234');
+insert into owner_08  values ('ï¿½ï¿½ï¿½Ì½Ã¾ï¿½', '890123', '01089012345');
 
 commit;
---»çÁø url Ãß°¡
+--ï¿½ï¿½ï¿½ï¿½ url ï¿½ß°ï¿½
 update stores_08
 set imgurl = 'https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240723_19%2F1721737944632b2tCb_JPEG%2FKakaoTalk_20240723_171426051_01.jpg'
-where st_name = '±¤È­¹®¹ÌÁø';
+where st_name = 'ï¿½ï¿½È­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½';
 update stores_08
 set imgurl = 'https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20221219_147%2F1671413977277kfr7A_JPEG%2FIMG_6672.jpg'
-where st_name = '´Éµ¿¹Ì³ª¸®';
+where st_name = 'ï¿½Éµï¿½ï¿½Ì³ï¿½ï¿½ï¿½';
 update stores_08
 set imgurl = 'https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240621_87%2F1718932410349D9ACn_JPEG%2FF482F18E-8E01-4C71-846F-DCD0CD730DCA.jpeg'
-where st_name = '´ãÅÃ';
+where st_name = 'ï¿½ï¿½ï¿½ï¿½';
 update stores_08
 set imgurl = 'https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20210203_238%2F16123396686766BgmO_JPEG%2FVQEX-Jzh8ySeojDcZ51EIAcv.jpeg.jpg'
-where st_name = 'ÆÄ·Ñ¾Ø¶û±×';
+where st_name = 'ï¿½Ä·Ñ¾Ø¶ï¿½ï¿½ï¿½';
 update stores_08
 set imgurl = 'https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20231012_86%2F1697077507089lRnWF_JPEG%2F__001715%2528%25C0%25FA%2529.jpg'
-where st_name = 'ÆÄÀÌºê°¡ÀÌÁî ¿©ÀÇµµ';
+where st_name = 'ï¿½ï¿½ï¿½Ìºê°¡ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Çµï¿½';
 update stores_08
 set imgurl = 'https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20230222_203%2F1677028275219acwLW_JPEG%2F3.jpg'
-where st_name = 'Ã»¿Í¿Á º»Á¡';
+where st_name = 'Ã»ï¿½Í¿ï¿½ ï¿½ï¿½ï¿½ï¿½';
 update stores_08
 set imgurl = 'https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20231206_140%2F17018453615409K0xF_JPEG%2FIMG_0377.jpeg'
-where st_name = 'ÇØ¸ñ ·Ôµ¥¿ùµå¸ôÁ¡';
+where st_name = 'ï¿½Ø¸ï¿½ ï¿½Ôµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½';
 update stores_08
 set imgurl = 'https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20181006_136%2F15388263467956xmnr_JPEG%2FDunqlR9MCDsclX5iIq9zHSqS.jpg'
-where st_name = '±îÆû';
+where st_name = 'ï¿½ï¿½ï¿½ï¿½';
 update stores_08
 set imgurl = 'https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20230507_28%2F1683449775436GV1fG_JPEG%2F%25C8%25AD%25B4%25F6%25BB%25E7%25C1%25F8_%25B3%25D7%25C0%25CC%25B9%25F6%25BF%25EB.jpg'
-where st_name = 'ÀÚ¹Ý°í ¾çÁÖº»Á¡';
+where st_name = 'ï¿½Ú¹Ý°ï¿½ ï¿½ï¿½ï¿½Öºï¿½ï¿½ï¿½';
 update stores_08
 set imgurl = 'https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20230819_5%2F1692450961444anluN_JPEG%2F20180622_024232.jpg'
-where st_name = '½º½ÃÈ÷·Î¹Ì';
+where st_name = 'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î¹ï¿½';
 update stores_08
 set imgurl = 'https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240115_87%2F1705294154194iaS1U_JPEG%2F%25B8%25C5%25C0%25E5%25B7%25CE%25B0%25ED__%25C7%25C3%25B7%25B9%25C0%25CC%25BD%25BA%25BF%25EB.JPG'
-where st_name = 'ÆÄÅ©ÇÁ¸®º£';
+where st_name = 'ï¿½ï¿½Å©ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½';
 update stores_08
 set imgurl = 'https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240114_55%2F17052394107669kRJ4_JPEG%2F%25BC%25BC%25C6%25AE_%25B5%25B9%25C2%25A5%25C0%25E5_%25D3%25DE_%252B_%25B0%25A5%25BA%25F1%25C2%25F2_%25D3%25DE.jpg'
-where st_name = 'ºÏÇÑ°­µ¹Â¥Àå';
+where st_name = 'ï¿½ï¿½ï¿½Ñ°ï¿½ï¿½ï¿½Â¥ï¿½ï¿½';
 update stores_08
 set imgurl = 'https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20221208_56%2F16704979113278pbyu_JPEG%2F1670497869109.jpg'
-where st_name = 'ÃÖ¹Ì»ï¼ø´ë±¹';
+where st_name = 'ï¿½Ö¹Ì»ï¿½ï¿½ï¿½ë±¹';
 update stores_08
 set imgurl = 'https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20210323_157%2F16164961014288UEDS_JPEG%2FQcxSSU7tB8Cvyrcn6YwE-Fxg.jpeg.jpg'
-where st_name = '·Î¸¶°æ¾ç½Ä';
+where st_name = 'ï¿½Î¸ï¿½ï¿½ï¿½ï¿½ï¿½';
 update stores_08
 set imgurl = 'https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20150901_137%2F1441050016442aTggi_JPEG%2F97167548137710_0.jpg'
-where st_name = 'Æ÷»çÀÌ';
+where st_name = 'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½';
 update stores_08
 set imgurl = 'https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240501_274%2F17144973577001RoQu_JPEG%2FKakaoTalk_20240501_013626274.jpg'
-where st_name = 'ÈÌ±Å¾ß';
+where st_name = 'ï¿½Ì±Å¾ï¿½';
 update stores_08
 set imgurl = 'https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20220614_25%2F1655176207066HO0qW_JPEG%2F7FFD4D7F-67A5-4410-B66D-CEF6EF4C243D.jpeg'
-where st_name = '´õÇÃ¶óÀ×ÆÒ·¹µå';
+where st_name = 'ï¿½ï¿½ï¿½Ã¶ï¿½ï¿½ï¿½ï¿½Ò·ï¿½ï¿½ï¿½';
 update stores_08
 set imgurl = 'https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240106_149%2F17045077684778w4Mh_JPEG%2F1000031260.jpg'
-where st_name = 'ÀåÀÎ´õ';
+where st_name = 'ï¿½ï¿½ï¿½Î´ï¿½';
 update stores_08
 set imgurl = 'https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyNDA4MDVfMjIy%2FMDAxNzIyODY1NzIwNjYx.6lctFPAvOs5xoafy-hdelvmGVRURf4FJaB26GG5WOekg.X1UwEjj7GcQAR64FeL6HJDl3Pu_9MUO4BU_fHvtRABIg.JPEG%2F53B17E72-1056-45F3-85A6-8B9C8412502B.jpeg%3Ftype%3Dw1500_60_sharpen'
-where st_name = 'µÎ¼¼¸£';
+where st_name = 'ï¿½Î¼ï¿½ï¿½ï¿½';
 update stores_08
 set imgurl = 'https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240411_248%2F1712796636352uOFHU_JPEG%2F%25C1%25A6%25B8%25F1%25C0%25BB-%25C0%25D4%25B7%25C2%25C7%25D8%25C1%25D6%25BC%25BC%25BF%25E4_-001_%25281%2529.jpg'
-where st_name = '´ÙÀÌ´×¿ø';
+where st_name = 'ï¿½ï¿½ï¿½Ì´×¿ï¿½';
 update stores_08
 set imgurl = 'https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20220318_112%2F1647591501689rhuOO_JPEG%2F%25B8%25E0%25BA%25B8%25BB%25FE.jpg'
-where st_name = 'ÁøÁø';
+where st_name = 'ï¿½ï¿½ï¿½ï¿½';
 update stores_08
 set imgurl = 'https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20150831_97%2F14409973295930rNod_JPEG%2F126873545332510_0.jpg'
-where st_name = 'ÆÈ¼±»ý';
+where st_name = 'ï¿½È¼ï¿½ï¿½ï¿½';
 update stores_08
 set imgurl = 'https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20220316_64%2F1647408253427gtxhF_JPEG%2F5.JPG'
-where st_name = '¸Å¶õ¹æ';
+where st_name = 'ï¿½Å¶ï¿½ï¿½ï¿½';
 update stores_08
 set imgurl = 'https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20220501_117%2F1651401168150pMT0r_JPEG%2F1651401156132.jpg'
-where st_name = '¼ÛÁ×Àå';
+where st_name = 'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½';
 update stores_08
 set imgurl = 'https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20180731_50%2F1533028164041ai5oI_PNG%2FWOsWjcaDkoo1PD4E-28ys-3Q.PNG.png'
-where st_name = '¿Ã¸®¾Ø';
+where st_name = 'ï¿½Ã¸ï¿½ï¿½ï¿½';
 update stores_08
 set imgurl = 'https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20211228_268%2F1640660798753lU7in_JPEG%2F%25B7%25CE%25B0%25ED.jpeg'
-where st_name = '¿ø µð±×¸® ³ë½º';
+where st_name = 'ï¿½ï¿½ ï¿½ï¿½×¸ï¿½ ï¿½ë½º';
 update stores_08
 set imgurl = 'https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20230723_76%2F1690120878597nXXzd_JPEG%2F2023_%25C6%25C4%25C6%25C4%25BE%25DF%25B8%25AE%25C7%25C1_bi_rev.jpg'
-where st_name = 'ÆÄÆÄ¾ß¸®ÇÁ';
+where st_name = 'ï¿½ï¿½ï¿½Ä¾ß¸ï¿½ï¿½ï¿½';
 update stores_08
 set imgurl = 'https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20231226_59%2F1703568415282aCklo_PNG%2Fdddd.png'
-where st_name = '¿¡ÀÌ½Ã¾È';
+where st_name = 'ï¿½ï¿½ï¿½Ì½Ã¾ï¿½';
 update stores_08
 set imgurl = 'https://search.pstatic.net/common/?src=https%3A%2F%2Fnaverbooking-phinf.pstatic.net%2F20240904_115%2F1725415804173SJ3Vn_JPEG%2F1_%25282%2529.jpg'
-where st_name = 'Å¬·¦ÇÇÀÚ';
+where st_name = 'Å¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½';
 update stores_08
 set imgurl = 'https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240409_40%2F1712660157767b9eUB_JPEG%2F1000014267.jpg'
-where st_name = '¿À¶ó';
+where st_name = 'ï¿½ï¿½ï¿½ï¿½';
 
 select * from stores_08;
 commit;

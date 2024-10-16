@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/MatResrv/css/header.css">
     <link rel="stylesheet" href="/MatResrv/css/reserve.css">
     <link rel="stylesheet" href="/MatResrv/css/modal.css">
+    <link rel="stylesheet" href="/MatResrv/css/footer.css">
     <script defer src="/MatResrv/js/header.js"></script>
     <script defer src="/MatResrv/js/reserve.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>

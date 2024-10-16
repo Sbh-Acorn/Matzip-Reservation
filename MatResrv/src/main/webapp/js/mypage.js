@@ -1,8 +1,8 @@
-let $btn = document.querySelector("#btn2");
+let $btn = document.querySelector("#saveBtn");
 
 $btn.addEventListener('click', function() {
     const $inputs = document.querySelectorAll('.info_input');
-    const $button = document.getElementById('btn2');
+    const $button = document.getElementById('saveBtn');
 
     // input의 readonly 속성을 제거하거나 다시 설정
     if ($button.textContent === '변경하기') {

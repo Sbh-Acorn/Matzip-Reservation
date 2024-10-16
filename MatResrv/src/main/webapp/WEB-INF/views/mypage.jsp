@@ -105,17 +105,20 @@
             </div>
             <div id="phone_wrap">
                 <p id="phone_tag" class="tag">전화번호</p>
-                <input type="text" value="${customerInfo.cusPhone}" name="cusPhone" class="info_input">
+                <input type="text" value="${customerInfo.cusPhone}" name="cusPhone" class="info_input" readonly>
             </div>
             <div id="pw_wrap">
                 <p id="pw_tag" class="tag">비밀번호</p>
-                <input type="password" name="cusPw" placeholder="변경할 비밀번호를 입력하세요" class="info_input">
+                <input type="password" value="${customerInfo.cusPw}" name="cusPw" class="info_input" readonly>
             </div>
         </div>
+<%--         <form id="customerInfoForm" action="${pageContext.request.contextPath}/mypage-update" method="post"> --%>
+        	<button type="submit" id="saveBtn2">수정확정</button>
+        </form>
         <div id="btn_wrap">
             <button type="submit" id="saveBtn">수정하기</button>
         </div>
-    </form>
+    <!-- </form> -->
 </div>
 
 
