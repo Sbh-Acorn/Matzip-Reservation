@@ -22,7 +22,7 @@
         <img src="/MatResrv/img/logo.png" alt="" id="logo">
     </a>
 
-    <h1 id="title">페이지명</h1>
+    <h1 id="title">식당 상세정보</h1>
     <div id="profile_wrap">
         <div id="profile_img_wrap">
             <%

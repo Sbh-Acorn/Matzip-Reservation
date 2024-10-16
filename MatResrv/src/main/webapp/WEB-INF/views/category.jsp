@@ -134,14 +134,14 @@
 			                <p class="select_txt">양식</p>
 		                </a>
 		            </li>
-		            <li class="select_item ${param.category == '아시아' ? 'selected' : ''}">
-		                <a href="${pageContext.request.contextPath}/category?region=${param.region}&category=아시아">
+		            <li class="select_item ${param.category == '아시아식' ? 'selected' : ''}">
+		                <a href="${pageContext.request.contextPath}/category?region=${param.region}&category=아시아식">
 		                    <div class="select_img_wrap"><img src="/MatResrv/img/asian.png" alt="" class="select_img"></div>
 		                	<p class="select_txt">아시아</p>
 		                </a>
 		            </li>
-		            <li class="select_item ${param.category == '카페' ? 'selected' : ''}">
-		                <a href="${pageContext.request.contextPath}/category?region=${param.region}&category=카페">
+		            <li class="select_item ${param.category == '카페/베이커리' ? 'selected' : ''}">
+		                <a href="${pageContext.request.contextPath}/category?region=${param.region}&category=카페/베이커리">
 		                    <div class="select_img_wrap"><img src="/MatResrv/img/cafe.png" alt="" class="select_img"></div>
 			                <p class="select_txt">카페</p>
 		                </a>
